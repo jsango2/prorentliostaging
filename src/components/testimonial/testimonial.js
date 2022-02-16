@@ -1,5 +1,4 @@
 import React from "react"
-import Form from "../Form/form.js"
 import {
   TestimonialWrap,
   ContentWrap,
@@ -8,37 +7,53 @@ import {
   Paragraph,
   AvatarContent,
   WrapNameCredential,
+  GradientBottomLine,
   Name,
   Credential,
 } from "./styles.js"
-import Star from "../../images/Star.svg"
 import Guy from "../../images/fotoGuy.png"
-
+import Lottie from "lottie-react"
+import animationStars from "./animationStars"
+import { useInView } from "react-intersection-observer"
+import gradientAnimation from "./animation"
 const Testimonial = () => {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.4,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
   return (
     <TestimonialWrap>
       <ContentWrap>
         <Stars>
+          <Lottie animationData={animationStars} autoPlay={true} loop={false} />
+          {/* <img src={Star} alt="" />
           <img src={Star} alt="" />
           <img src={Star} alt="" />
           <img src={Star} alt="" />
-          <img src={Star} alt="" />
-          <img src={Star} alt="" />
+          <img src={Star} alt="" /> */}
         </Stars>
-        <Title>“Excellent experience using Rentlio”</Title>
-        <Paragraph>
+        <Title>
+          “Prelazak s postojećeg sustava na Rentlio bio je kao prelazak s Nokie
+          3310 na iPhone 13 PRO.”
+        </Title>
+        {/* <Paragraph>
           They have amazing support, always ready to help. Product is very
           intuitive and well structured. Rentlio allowed us to make everything
           automatic
-        </Paragraph>
+        </Paragraph> */}
         <AvatarContent>
           <img src={Guy} alt="Guy" width="80" height="80" />
           <WrapNameCredential>
-            <Name>Guy Hawkins</Name>
+            <Name>Tomislav Buljubašić</Name>
             <Credential>Hotel manager, Valamar Isabella Miramare</Credential>
           </WrapNameCredential>
         </AvatarContent>
       </ContentWrap>
+      <GradientBottomLine>
+        <Lottie animationData={gradientAnimation} autoPlay={true} loop={true} />
+      </GradientBottomLine>
     </TestimonialWrap>
   )
 }

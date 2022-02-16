@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const TestimonialWrap = styled.div`
   position: relative;
   width: 100%;
-  height: 565px;
+  height: 483px;
   background: #ffffff;
   padding-top: 100px;
   z-index: 1;
@@ -24,8 +24,8 @@ export const ContentWrap = styled.div`
 `
 export const Stars = styled.div`
   position: relative;
-  width: 136px;
-  height: 20px;
+  width: 155px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 768px) {
@@ -39,8 +39,8 @@ export const Title = styled.div`
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 36px;
   margin-top: 20px;
 
   /* Blue */
@@ -77,6 +77,7 @@ export const AvatarContent = styled.div`
   height: 80px;
   display: flex;
   align-items: center;
+  margin-top: 50px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -120,6 +121,31 @@ export const Credential = styled.h4`
 
   color: #706f6f;
 
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const GradientBottomLine = styled.div`
+  position: absolute;
+  width: 101%;
+  height: 10px;
+  left: 0;
+  bottom: 6px;
+
+  /* Rentlio gradient */
+
+  /* background: linear-gradient(
+    90deg,
+    #a9cf3a 0%,
+    #a7cf40 5.15%,
+    #a2ce52 12.91%,
+    #99cd6f 22.31%,
+    #8bcb92 32.97%,
+    #78cabb 44.65%,
+    #59c9e7 56.32%,
+    #1d9ed9 99.98%
+  ); */
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

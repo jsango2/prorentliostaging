@@ -3,8 +3,9 @@ import bg4 from "../../images/bg4.png"
 
 export const FourFactsWrap = styled.div`
   position: relative;
+  z-index: 2;
   width: 100%;
-  height: 1080px;
+  height: 2450px;
   background-image: url(${bg4});
   background-position: center;
   background-size: cover;
@@ -12,13 +13,9 @@ export const FourFactsWrap = styled.div`
   padding-left: 130px;
   padding-right: 130px;
   padding-bottom: 130px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 188px;
-  grid-row-gap: 100px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
+
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -26,8 +23,32 @@ export const FourFactsWrap = styled.div`
 `
 export const Box = styled.div`
   position: relative;
-  width: 496px;
-  height: 250px;
+  width: 1180px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const Photo = styled.div`
+  position: relative;
+  width: 580px;
+  height: 400px;
+  background-color: azure;
+  border-radius: 15px;
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
+export const TextBox = styled.div`
+  position: relative;
+  width: 480px;
+  height: auto;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -51,15 +72,12 @@ export const BoxGreenTitle = styled.h5`
 `
 export const Title = styled.h2`
   width: 100%;
-  height: 120px;
-
+  height: auto;
   font-family: "Roboto", sans-serif;
-
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 60px;
-  /* or 125% */
   margin-bottom: 30px;
   color: #ffffff;
   @media screen and (max-width: 768px) {

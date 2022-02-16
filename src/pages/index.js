@@ -1,23 +1,20 @@
-import * as React from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import Testimonial from "../components/testimonial/testimonial"
 import FourFacts from "../components/fourFacts/fourFacts"
 import Support from "../components/support/support"
-import { graphql, Link as GatsbyLink } from "gatsby"
-import {
-  Link,
-  Trans,
-  useTranslation,
-  useI18next,
-} from "gatsby-plugin-react-i18next"
-import i18next from "i18next"
+import { graphql } from "gatsby"
+import TableSection from "../components/Table/TableSection"
+import Clients from "../components/Clients"
+import UserLogos from "../components/UserLogos"
+import Integrations from "../components/Integrations"
+import FormBottom from "../components/FormBottom"
+import BlogCards from "../components/BlogCards"
+import Footer from "../components/Footer"
 
 const BlogIndex = ({ data, location }) => {
-  console.log(data)
-  const { t } = useTranslation()
-  const { languages, changeLanguage } = useI18next()
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
@@ -26,7 +23,14 @@ const BlogIndex = ({ data, location }) => {
       <Hero />
       <Testimonial />
       <FourFacts />
-      <Support />
+      <TableSection />
+      <Clients />
+      <UserLogos />
+      <Integrations />
+      <FormBottom />
+      <BlogCards />
+      <Footer />
+      {/* <Support /> */}
     </Layout>
   )
 }
@@ -34,16 +38,7 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query {
     site {
       siteMetadata {
         title

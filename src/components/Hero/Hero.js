@@ -7,18 +7,12 @@ import {
   LogoHero,
   HeroTitle,
   HeroParagraph,
-  GradientBottomLine,
+  // GradientBottomLine,
 } from "./styles.js"
 import Lottie from "lottie-react"
-import gradientAnimation from "./animation"
-import {
-  Link,
-  Trans,
-  useTranslation,
-  useI18next,
-} from "gatsby-plugin-react-i18next"
+// import gradientAnimation from "../testimonial/animation"
+
 const Hero = () => {
-  const { t } = useTranslation()
   return (
     <HeroWrap>
       <HeroOverlay />
@@ -26,22 +20,24 @@ const Hero = () => {
       <LogoHero>
         <img src="/images/RentlioLogo.svg" alt="Logo" />
       </LogoHero>
-      <HeroTitle>{t("Hero title")}</HeroTitle>
+      <HeroTitle>
+        Recepcija,
+        <br /> imamo problem!
+      </HeroTitle>
       <div>
         <HeroParagraph>
-          Ručni unosi i računanje, dok desetci gostiju čekaju na svoj red,
-          nepotrebne dodatne tablice i rokovnici, nemogućnost ostvarenja većih
-          prihoda prodajom dodatnih usluga, provizije na svakom koraku i čekanje
-          tjednima na rješavanje problema prijavljenog korisničkoj. Jeste li
-          spremni reći dosta?
+          Rezervacije nema u sustavu. Ekran se smrznuo. Korisnička podrška
+          nedostupna. Spor check-in. Ručno upisivanje - pa prepisivanje. Red
+          ispred recepcije raste. Gosti sve nervozniji.
           <br />
           <br />
-          Odbrojavanje za Rentlio digitalnu transformaciju je počelo.
+          <strong>Opet</strong> propuštena prilika zbog zastarjelog hotelskog
+          sustava.
         </HeroParagraph>
       </div>
-      <GradientBottomLine>
+      {/* <GradientBottomLine>
         <Lottie animationData={gradientAnimation} autoPlay={true} loop={true} />
-      </GradientBottomLine>
+      </GradientBottomLine> */}
 
       <Form />
     </HeroWrap>

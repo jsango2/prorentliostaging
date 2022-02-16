@@ -4,15 +4,15 @@ export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
   height: 585px;
-  background: #ffffff;
+  /* background: #ffffff; */
   /* Gray04 */
-  top: 510px;
-  right: 130px;
-  border: 1px solid #eaeaea;
+  /* top: 510px; */
+  /* right: 130px; */
   box-sizing: border-box;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   z-index: 2;
+  margin-top: 30px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

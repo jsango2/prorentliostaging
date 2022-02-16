@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const HeroWrap = styled.div`
   position: relative;
   width: 100%;
-  height: 854px;
+  height: 760px;
   background-image: url("/images/HeroPhoto.png");
   background-position: center;
   background-size: cover;
@@ -43,7 +43,7 @@ export const LogoHero = styled.div`
 export const HeroTitle = styled.h1`
   position: relative;
   width: 651px;
-  height: 326px;
+  height: 195px;
   margin-top: 127px;
   margin-left: 131px;
   font-family: "Roboto", sans-serif;
@@ -81,7 +81,7 @@ export const GradientBottomLine = styled.div`
   width: 101%;
   height: 10px;
   left: 0;
-  bottom: 7px;
+  bottom: 6px;
 
   /* Rentlio gradient */
 

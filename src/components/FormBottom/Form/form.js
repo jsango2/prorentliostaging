@@ -5,9 +5,7 @@ const Form = ({ title }) => {
   return (
     <>
       <FormWrap>
-        <FormTitle>
-          Ispuni podatke danas - Udvostruči prihode, iskorisiti prilike.
-        </FormTitle>
+        <FormTitle></FormTitle>
 
         <FieldsWrap>
           <form
@@ -74,7 +72,6 @@ const Form = ({ title }) => {
           </form>
         </FieldsWrap>
       </FormWrap>
-      <FormBehind />
     </>
   )
 }

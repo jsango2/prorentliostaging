@@ -1,3 +1,4 @@
+// const { languages, defaultLanguage } = require("./languages")
 module.exports = {
   siteMetadata: {
     title: `Rentlio Hoteli Hr`,
@@ -6,7 +7,7 @@ module.exports = {
       summary: `Rentlio Hotel Landing Page`,
     },
     description: `Rentlio Hotel Landing Page`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://localhost:8003/`,
     social: {
       twitter: `Rentlio`,
     },
@@ -61,7 +62,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Roboto\:400,500,900`],
+        fonts: [`Roboto\:400,500,700,900`, `Barlow\:600`],
         display: "swap",
       },
     },
@@ -72,35 +73,36 @@ module.exports = {
         name: `locale`,
       },
     },
-    {
-      resolve: `gatsby-plugin-react-i18next`,
-      options: {
-        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [`en`, `hr`],
-        defaultLanguage: `hr`,
-        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://example.com/`,
-        // you can pass any i18next options
-        i18nextOptions: {
-          interpolation: {
-            escapeValue: false, // not needed for react as it escapes by default
-          },
-          keySeparator: false,
-          nsSeparator: false,
-        },
-        pages: [
-          {
-            matchPath: "/:lang?",
-            getLanguageFromPath: false,
-            // excludeLanguages: ["es"],
-          },
-          {
-            matchPath: "/preview",
-            languages: ["en", "hr"],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-react-i18next`,
+    //   options: {
+    //     localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+    //     languages: [`en`, `hr`],
+    //     defaultLanguage: `hr`,
+
+    //     // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+    //     siteUrl: `https://example.com/`,
+    //     // you can pass any i18next options
+    //     i18nextOptions: {
+    //       interpolation: {
+    //         escapeValue: false, // not needed for react as it escapes by default
+    //       },
+    //       keySeparator: false,
+    //       nsSeparator: false,
+    //     },
+    //     pages: [
+    //       {
+    //         matchPath: "/:lang?",
+    //         getLanguageFromPath: false,
+    //         // excludeLanguages: ["es"],
+    //       },
+    //       {
+    //         matchPath: "/preview",
+    //         languages: ["en", "hr"],
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
