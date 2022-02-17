@@ -35,6 +35,9 @@ export const Box = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 150px;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   @media screen and (max-width: 430px) {
     width: 100%;
     height: auto;
@@ -42,7 +45,7 @@ export const Box = styled.div`
     margin-bottom: 80px;
 
     &:nth-child(even) {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 `
@@ -87,6 +90,7 @@ export const WrapTitle = styled.div`
 `
 export const BlueNumber = styled.div`
   position: relative;
+  min-width: 170px;
   width: auto;
   height: 40px;
   display: flex;
@@ -95,11 +99,7 @@ export const BlueNumber = styled.div`
   padding: 0 15px;
   background: linear-gradient(90deg, #0d3151 0%, #1d9ed9 99.98%);
   border-radius: 12px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
+
   margin-left: 30px;
   /* identical to box height */
 

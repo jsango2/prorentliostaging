@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ref } from "react"
 import {
   TestimonialWrap,
   ContentWrap,
@@ -12,28 +12,39 @@ import {
   Credential,
 } from "./styles.js"
 import Guy from "../../images/fotoGuy.png"
-import Lottie from "lottie-react"
+import Lottie, { useLottie, useLottieInteractivity } from "lottie-react"
 import animationStars from "./animationStars"
 import { useInView } from "react-intersection-observer"
 import gradientAnimation from "./animation"
+
+const style = {
+  height: 40,
+}
+const Example = () => {
+  const options = {
+    animationData: animationStars,
+    loop: false,
+    autoplay: true,
+    initialSegment: [0, 114],
+  }
+
+  const { View } = useLottie(options, style)
+
+  return View
+}
+
 const Testimonial = () => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0.4,
+    threshold: 0.6,
     // trigger inView function only once
     triggerOnce: true,
   })
+
   return (
     <TestimonialWrap>
-      <ContentWrap>
-        <Stars>
-          <Lottie animationData={animationStars} autoPlay={true} loop={false} />
-          {/* <img src={Star} alt="" />
-          <img src={Star} alt="" />
-          <img src={Star} alt="" />
-          <img src={Star} alt="" />
-          <img src={Star} alt="" /> */}
-        </Stars>
+      <ContentWrap ref={ref}>
+        <Stars>{inView && <Example />}</Stars>
         <Title>
           “Prelazak s postojećeg sustava na Rentlio bio je kao prelazak s Nokie
           3310 na iPhone 13 PRO.”
