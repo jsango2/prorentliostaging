@@ -9,7 +9,7 @@ import {
   Stars,
   CardOverlay,
 } from "./styles.js"
-import stars from "../../../public/images/5stars.svg"
+import stars from "../../../static/images/5stars.svg"
 
 const Card = ({ title, text, avatar, owner, hotel, overlay, onClick }) => {
   return (

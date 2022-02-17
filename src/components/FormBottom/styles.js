@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import photo from "../../../public/images/formbottom.png"
+import photo from "../../../static/images/formbottom.png"
 
 export const WrapFormBottom = styled.div`
   position: relative;

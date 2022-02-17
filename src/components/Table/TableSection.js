@@ -12,8 +12,8 @@ import {
   TradicionalanSustav,
 } from "./styles.js"
 import { tableData } from "./tableData.js"
-import No from "../../../public/images/x.svg"
-import Yes from "../../../public/images/yes.svg"
+import No from "../../../static/images/x.svg"
+import Yes from "../../../static/images/yes.svg"
 const TableSection = () => {
   return (
     <TableSectionWrap>

@@ -40,13 +40,14 @@ export const Logos = styled.div`
   margin-top: 150px;
   align-items: center;
   @media screen and (max-width: 490px) {
-  margin-top: 50px;
+    margin-top: 50px;
 
     height: auto;
     flex-direction: column;
- img{
-   margin: 20px auto;
- }
+    img {
+      margin: 20px auto;
+    }
+  }
 `
 export const Wrap = styled.div`
   display: flex;

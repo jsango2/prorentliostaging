@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from "../../../public/images/HeroPhoto2.png"
+import bg from "../../../static/images/HeroPhoto2.png"
 
 export const HeroWrap = styled.div`
   position: relative;

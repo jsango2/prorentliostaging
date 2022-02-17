@@ -10,10 +10,10 @@ import {
   BlueNumber,
   WrapTitle,
 } from "./styles.js"
-import p1 from "../../../public/images/facts1.png"
-import p2 from "../../../public/images/facts2.png"
-import p3 from "../../../public/images/facts3.png"
-import p4 from "../../../public/images/facts4.png"
+import p1 from "../../../static/images/facts1.png"
+import p2 from "../../../static/images/facts2.png"
+import p3 from "../../../static/images/facts3.png"
+import p4 from "../../../static/images/facts4.png"
 
 const FourFacts = () => {
   return (

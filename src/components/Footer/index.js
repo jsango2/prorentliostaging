@@ -9,15 +9,15 @@ import {
   FollowUs,
   WrapSocial,
 } from "./styles"
-import facebook from "../../../public/images/Facebook.svg"
-import Instagram from "../../../public/images/Instagram.svg"
-import Youtube from "../../../public/images/Youtube.svg"
-import Twitter from "../../../public/images/Twitter.svg"
-import Linkedin from "../../../public/images/Linkedin@2x.svg"
-import captera from "../../../public/images/captera.png"
-import booking from "../../../public/images/bookingcom.svg"
-import pref from "../../../public/images/prefcust.svg"
-import expedia from "../../../public/images/expedia.svg"
+import facebook from "../../../static/images/Facebook.svg"
+import Instagram from "../../../static/images/Instagram.svg"
+import Youtube from "../../../static/images/Youtube.svg"
+import Twitter from "../../../static/images/Twitter.svg"
+import Linkedin from "../../../static/images/Linkedin@2x.svg"
+import captera from "../../../static/images/captera.png"
+import booking from "../../../static/images/bookingcom.svg"
+import pref from "../../../static/images/prefcust.svg"
+import expedia from "../../../static/images/expedia.svg"
 
 const Footer = () => {
   return (

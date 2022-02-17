@@ -7,7 +7,7 @@ import {
   Fact,
   Title,
 } from "./styles.js"
-import Yes from "../../../public/images/yes.svg"
+import Yes from "../../../static/images/yes.svg"
 import Form from "./Form/form.js"
 
 const FormBottom = () => {

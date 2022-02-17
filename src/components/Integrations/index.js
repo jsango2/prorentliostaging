@@ -1,9 +1,9 @@
 import React from "react"
 import { WrapIntegrationsSection, Title, Text, Logos, Image } from "./styles.js"
-import p1 from "../../../public/images/remaris.png"
-import p2 from "../../../public/images/gastrobit.png"
-import p3 from "../../../public/images/ritam.png"
-import p4 from "../../../public/images/monri.png"
+import p1 from "../../../static/images/remaris.png"
+import p2 from "../../../static/images/gastrobit.png"
+import p3 from "../../../static/images/ritam.png"
+import p4 from "../../../static/images/monri.png"
 
 const Integrations = () => {
   return (

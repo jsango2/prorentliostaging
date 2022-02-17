@@ -1,6 +1,6 @@
 import React from "react"
 import { UserLogosWrap } from "./styles.js"
-import Users from "../../../public/images/users.png"
+import Users from "../../../static/images/users.png"
 
 const UserLogos = () => {
   return (
