@@ -17,9 +17,26 @@ export const Cards = styled.div`
   width: 90%;
   justify-content: space-around;
   margin: 150px auto 0 auto;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  & .slick-dots {
+    position: absolute;
+    bottom: 39px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  & .slick-dots li button:before {
+    font-size: 16px;
+  }
+  & .slick-dots li.slick-active button:before {
+    color: #1d9ed9;
+  }
+  @media screen and (max-width: 460px) {
+    margin: 80px auto 0 auto;
+
+    flex-direction: column;
   }
 `
 export const Title = styled.h1`
@@ -34,9 +51,11 @@ export const Title = styled.h1`
   /* Blue */
 
   color: #0d3151;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 50px;
+    width: 90%;
   }
 `
 export const CardTitle = styled.h1`
@@ -87,7 +106,9 @@ export const CardWrap = styled.div`
   width: 360px;
   height: 502px;
   cursor: pointer;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 490px) {
+    width: 95%;
+
     /* order: 1;
     margin-bottom: 1rem; */
   }

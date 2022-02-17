@@ -6,20 +6,23 @@ export const TestimonialWrap = styled.div`
   height: 483px;
   background: #ffffff;
   padding-top: 100px;
+  padding-left: 130px;
+
   z-index: 1;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    height: 1000px;
+    padding-left: 30px;
   }
 `
 export const ContentWrap = styled.div`
   position: relative;
   width: 557px;
   height: 254px;
-  margin: 0 auto auto 131px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 109px;
+    width: 90%;
   }
 `
 export const Stars = styled.div`
@@ -46,9 +49,11 @@ export const Title = styled.div`
   /* Blue */
 
   color: #0d3151;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 95%;
+    height: auto;
+    font-size: 20px;
+    line-height: 36px;
   }
 `
 export const Paragraph = styled.div`
@@ -87,9 +92,8 @@ export const WrapNameCredential = styled.div`
   width: 229px;
   height: 47px;
   margin-left: 30px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 56vw;
   }
 `
 
@@ -121,7 +125,7 @@ export const Credential = styled.h4`
 
   color: #706f6f;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 430px) {
     /* order: 1;
     margin-bottom: 1rem; */
   }
@@ -146,8 +150,7 @@ export const GradientBottomLine = styled.div`
     #59c9e7 56.32%,
     #1d9ed9 99.98%
   ); */
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 301%;
   }
 `

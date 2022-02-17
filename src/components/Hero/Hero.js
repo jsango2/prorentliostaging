@@ -7,6 +7,7 @@ import {
   LogoHero,
   HeroTitle,
   HeroParagraph,
+  HeroParagraph2,
   // GradientBottomLine,
 } from "./styles.js"
 import Lottie from "lottie-react"
@@ -29,10 +30,10 @@ const Hero = () => {
           Rezervacije nema u sustavu. Ekran se smrznuo. Korisnička podrška
           nedostupna. Spor check-in. Ručno upisivanje - pa prepisivanje. Red
           ispred recepcije raste. Gosti sve nervozniji.
-          <br />
-          <br />
-          <strong>Opet</strong> propuštena prilika zbog zastarjelog hotelskog
-          sustava.
+          <HeroParagraph2>
+            <strong>Opet</strong> propuštena prilika zbog zastarjelog hotelskog
+            sustava.
+          </HeroParagraph2>
         </HeroParagraph>
       </div>
       {/* <GradientBottomLine>

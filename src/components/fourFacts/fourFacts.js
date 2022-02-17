@@ -7,14 +7,24 @@ import {
   Paragraph,
   TextBox,
   Photo,
+  BlueNumber,
+  WrapTitle,
 } from "./styles.js"
+import p1 from "../../../public/images/facts1.png"
+import p2 from "../../../public/images/facts2.png"
+import p3 from "../../../public/images/facts3.png"
+import p4 from "../../../public/images/facts4.png"
 
 const FourFacts = () => {
   return (
     <FourFactsWrap>
       <Box>
         <TextBox>
-          <BoxGreenTitle>Efikasno</BoxGreenTitle>
+          <WrapTitle>
+            <BoxGreenTitle>Efikasno</BoxGreenTitle>
+            <BlueNumber>80% manje administracije</BlueNumber>
+          </WrapTitle>
+
           <Title>Odvojeni sustavi, a može jedan?</Title>
           <Paragraph>
             Rezervacija nije vidljiva i izmjene nisu evidentirane? Česti
@@ -24,12 +34,19 @@ const FourFacts = () => {
             rješenje koje ne trpi navedene probleme.
           </Paragraph>
         </TextBox>
-        <Photo></Photo>
+        <Photo>
+          <img src={p1} alt="photo 1" />
+        </Photo>
       </Box>
       <Box>
-        <Photo></Photo>
+        <Photo>
+          <img src={p2} alt="photo 2" />
+        </Photo>
         <TextBox>
-          <BoxGreenTitle>Pouzdano</BoxGreenTitle>
+          <WrapTitle>
+            <BoxGreenTitle>Pouzdano</BoxGreenTitle>
+            <BlueNumber>3:36 minute za odgovor</BlueNumber>
+          </WrapTitle>
           <Title>Odgovor podrške čekate tjednima? </Title>
           <Paragraph>
             Zaobilazite probleme jer od slanja upita nema ništa?
@@ -43,7 +60,10 @@ const FourFacts = () => {
       </Box>
       <Box>
         <TextBox>
-          <BoxGreenTitle>Profitabilno</BoxGreenTitle>
+          <WrapTitle>
+            <BoxGreenTitle>Profitabilno</BoxGreenTitle>
+            <BlueNumber>25% viši prihodi</BlueNumber>
+          </WrapTitle>
           <Title>Propuštate prihode?</Title>
           <Paragraph>
             Hotelski sustav funkcionira kao da su još devedesete, samo zbrajate
@@ -54,13 +74,20 @@ const FourFacts = () => {
             prihodi će porasti za 25%.
           </Paragraph>
         </TextBox>
-        <Photo></Photo>
+        <Photo>
+          <img src={p3} alt="photo 3" />
+        </Photo>
       </Box>
       <Box>
         {" "}
-        <Photo></Photo>
+        <Photo>
+          <img src={p4} alt="photo 4" />
+        </Photo>
         <TextBox>
-          <BoxGreenTitle>Fleksibilno</BoxGreenTitle>
+          <WrapTitle>
+            <BoxGreenTitle>Fleksibilno</BoxGreenTitle>
+            <BlueNumber style={{ width: "300px" }} />
+          </WrapTitle>
           <Title>Izvještaji kasne satima?</Title>
           <Paragraph>
             Vrijeme je novac, a vi tratite vrijeme čekajući izvještaje sa ne

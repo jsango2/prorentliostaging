@@ -5,6 +5,7 @@ export const WrapIntegrationsSection = styled.div`
   width: 100%;
   height: 671px;
   padding-top: 180px;
+
   background: linear-gradient(180deg, #eaeaea 0%, #ffffff 76.18%);
   clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
@@ -12,20 +13,36 @@ export const WrapIntegrationsSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    height: auto;
+    padding: 100px 10px 90px 10px;
   }
 `
 export const Logos = styled.div`
   width: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 80px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  flex-wrap: wrap;
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    justify-content: center;
+  }
+`
+export const Image = styled.div`
+  img {
+    width: 230px;
+    height: 90px;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 430px) {
+    img {
+      width: 130px;
+      height: 50px;
+      object-fit: contain;
+      margin: 0 20px;
+    }
   }
 `
 export const Title = styled.h1`
@@ -39,6 +56,7 @@ export const Title = styled.h1`
   /* Blue */
   text-align: center;
   color: #0d3151;
+  width: 80%;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -53,12 +71,10 @@ export const Text = styled.p`
   /* or 167% */
   width: 800px;
   text-align: center;
-
   /* Blue */
 
   color: #0d3151;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 90%;
   }
 `

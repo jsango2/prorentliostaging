@@ -1,14 +1,17 @@
 import styled from "styled-components"
+import bg from "../../../public/images/HeroPhoto.png"
 
 export const HeroWrap = styled.div`
   position: relative;
   width: 100%;
   height: 760px;
-  background-image: url("/images/HeroPhoto.png");
+  background-image: url(${bg});
   background-position: center;
   background-size: cover;
-
-  @media screen and (max-width: 768px) {
+  padding-left: 130px;
+  padding-top: 96px;
+  @media screen and (max-width: 430px) {
+    padding-left: 30px;
     /* order: 1;
     margin-bottom: 1rem; */
   }
@@ -16,6 +19,8 @@ export const HeroWrap = styled.div`
 
 export const HeroOverlay = styled.div`
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -31,8 +36,6 @@ export const HeroOverlay = styled.div`
 `
 export const LogoHero = styled.div`
   position: relative;
-  top: 68px;
-  left: 130px;
 
   @media screen and (max-width: 768px) {
     /* order: 1;
@@ -45,16 +48,25 @@ export const HeroTitle = styled.h1`
   width: 651px;
   height: 195px;
   margin-top: 127px;
-  margin-left: 131px;
+  margin-bottom: 28px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 80px;
   line-height: 94px;
   color: #ffffff;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+
+  @media screen and (max-width: 430px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    /* or 117% */
+    width: 90%;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 60px;
   }
 `
 
@@ -67,13 +79,36 @@ export const HeroParagraph = styled.p`
   line-height: 30px;
   /* or 167% */
   width: 572px;
-  height: 170px;
+  height: auto;
   color: #ffffff;
-  margin-left: 131px;
-  margin-top: 28px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+
+  @media screen and (max-width: 430px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%;
+
+    /* or 150% */
+  }
+`
+export const HeroParagraph2 = styled.p`
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  width: 572px;
+  height: auto;
+  color: #ffffff;
+  margin-top: 30px;
+  @media screen and (max-width: 430px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    /* or 150% */
   }
 `
 export const GradientBottomLine = styled.div`

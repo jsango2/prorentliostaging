@@ -1,5 +1,5 @@
 import React from "react"
-import { WrapIntegrationsSection, Title, Text, Logos } from "./styles.js"
+import { WrapIntegrationsSection, Title, Text, Logos, Image } from "./styles.js"
 import p1 from "../../../public/images/remaris.png"
 import p2 from "../../../public/images/gastrobit.png"
 import p3 from "../../../public/images/ritam.png"
@@ -15,10 +15,18 @@ const Integrations = () => {
         hotelskim operacijama. 
       </Text>
       <Logos>
-        <img src={p1} alt="p1" width="250px" />
-        <img src={p2} alt="p2" width="250px" />
-        <img src={p3} alt="p3" width="250px" />
-        <img src={p4} alt="p4" width="250px" />
+        <Image>
+          <img src={p1} alt="p1" height="100%" />
+        </Image>
+        <Image>
+          <img src={p2} alt="p2" height="100%" />
+        </Image>
+        <Image>
+          <img src={p3} alt="p3" height="100%" />
+        </Image>
+        <Image>
+          <img src={p4} alt="p4" height="100%" />
+        </Image>
       </Logos>
     </WrapIntegrationsSection>
   )

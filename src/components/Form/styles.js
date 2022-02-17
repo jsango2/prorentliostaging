@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
-  height: 585px;
+  height: 609px;
   background: #ffffff;
   /* Gray04 */
   top: 510px;
@@ -13,9 +13,11 @@ export const FormWrap = styled.div`
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   z-index: 2;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 95%;
+    top: 732px;
+    right: 50%;
+    transform: translate(50%, 0);
   }
 `
 
@@ -33,8 +35,10 @@ export const FormBehind = styled.div`
   border-radius: 20px;
 
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 85%;
+    top: 723px;
+    right: 50%;
+    transform: translate(50%, 0);
   }
 `
 export const LogoHero = styled.div`
@@ -117,9 +121,19 @@ export const FormTitle = styled.div`
   line-height: 30px;
   color: #0d3151;
 
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+
+    /* Blue */
+
+    color: #0d3151;
   }
 `
 export const FieldsWrap = styled.div`
@@ -177,8 +191,14 @@ export const FieldsWrap = styled.div`
     cursor: pointer;
     color: #ffffff;
   }
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    margin: 0 30px 40px 20px;
+    width: 90%;
+    & input {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
   }
 `

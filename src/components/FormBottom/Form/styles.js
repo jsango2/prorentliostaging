@@ -13,9 +13,8 @@ export const FormWrap = styled.div`
   border-radius: 20px;
   z-index: 2;
   margin-top: 30px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 100%;
   }
 `
 
@@ -177,8 +176,7 @@ export const FieldsWrap = styled.div`
     cursor: pointer;
     color: #ffffff;
   }
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 86%;
   }
 `

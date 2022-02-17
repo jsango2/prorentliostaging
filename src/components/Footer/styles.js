@@ -12,9 +12,10 @@ export const WrapFooterSection = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    padding-top: 150px;
+
+    height: auto;
   }
 `
 export const FirstRow = styled.div`
@@ -23,9 +24,11 @@ export const FirstRow = styled.div`
   height: 30px;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `
 export const Logos = styled.div`
@@ -36,18 +39,32 @@ export const Logos = styled.div`
   justify-content: space-between;
   margin-top: 150px;
   align-items: center;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
-  }
+  @media screen and (max-width: 490px) {
+  margin-top: 50px;
+
+    height: auto;
+    flex-direction: column;
+ img{
+   margin: 20px auto;
+ }
 `
 export const Wrap = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+`
+export const WrapSocial = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 490px) {
+    margin-top: 50px;
   }
 `
 export const Text = styled.a`
@@ -61,9 +78,8 @@ export const Text = styled.a`
   /* Blue */
   margin: 0;
   color: #0d3151;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    margin-bottom: 30px;
   }
 `
 export const FollowUs = styled.p`
@@ -88,8 +104,7 @@ export const Line = styled.div`
   background-color: #a9cf3a;
   margin-left: 30px;
   margin-right: 30px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-  margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    display: none;
   }
 `

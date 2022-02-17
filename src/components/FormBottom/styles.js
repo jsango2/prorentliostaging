@@ -6,13 +6,11 @@ export const WrapFormBottom = styled.div`
 
   width: 100%;
   height: 800px;
-  background-image: url(${photo});
-  background-position: center;
-  background-size: cover;
+
   display: flex;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    height: auto;
+    flex-direction: column;
   }
 `
 export const TextBox = styled.div`
@@ -22,22 +20,26 @@ export const TextBox = styled.div`
   width: 50%;
   height: 100%;
 
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    padding: 80px 30px;
+
+    width: 100%;
+    height: auto;
   }
 `
 export const FormBox = styled.div`
   position: relative;
-
+  background-image: url(${photo});
+  background-position: center;
+  background-size: cover;
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 430px) {
+    width: 100%;
+    height: 625px;
   }
 `
 export const ThreeFacts = styled.div`
@@ -62,8 +64,7 @@ export const Fact = styled.div`
 
   color: #ffffff;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    font-size: 18px;
   }
 `
 export const Title = styled.h1`
@@ -75,7 +76,7 @@ export const Title = styled.h1`
   margin-bottom: 90px;
   color: #ffffff;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    text-align: center;
+    font-size: 45px;
   }
 `

@@ -7,6 +7,7 @@ import {
   Line,
   Wrap,
   FollowUs,
+  WrapSocial,
 } from "./styles"
 import facebook from "../../../public/images/Facebook.svg"
 import Instagram from "../../../public/images/Instagram.svg"
@@ -33,44 +34,46 @@ const Footer = () => {
         </Wrap>
         <Wrap>
           <FollowUs>Follow us on</FollowUs>
-          <a href="https://www.facebook.com/rentlio" target="_blank">
-            <img
-              src={facebook}
-              alt="social facebook"
-              style={{ margin: "0 15px" }}
-            />
-          </a>
-          <a href="https://www.instagram.com/rentlio" target="_blank">
-            <img
-              src={Instagram}
-              alt="social instagram"
-              style={{ margin: "0 15px" }}
-            />
-          </a>
-          <a href="https://twitter.com/rentlio" target="_blank">
-            <img
-              src={Twitter}
-              alt="social twitter"
-              style={{ margin: "0 15px" }}
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCxe9C197-bFD13nY86XbrEA"
-            target="_blank"
-          >
-            <img
-              src={Youtube}
-              alt="social Youtube"
-              style={{ margin: "0 15px" }}
-            />
-          </a>
-          <a href="https://hr.linkedin.com/company/rentlio" target="_blank">
-            <img
-              src={Linkedin}
-              alt="social Linkedin"
-              style={{ margin: "0 15px" }}
-            />
-          </a>
+          <WrapSocial>
+            <a href="https://www.facebook.com/rentlio" target="_blank">
+              <img
+                src={facebook}
+                alt="social facebook"
+                style={{ margin: "0 15px" }}
+              />
+            </a>
+            <a href="https://www.instagram.com/rentlio" target="_blank">
+              <img
+                src={Instagram}
+                alt="social instagram"
+                style={{ margin: "0 15px" }}
+              />
+            </a>
+            <a href="https://twitter.com/rentlio" target="_blank">
+              <img
+                src={Twitter}
+                alt="social twitter"
+                style={{ margin: "0 15px" }}
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCxe9C197-bFD13nY86XbrEA"
+              target="_blank"
+            >
+              <img
+                src={Youtube}
+                alt="social Youtube"
+                style={{ margin: "0 15px" }}
+              />
+            </a>
+            <a href="https://hr.linkedin.com/company/rentlio" target="_blank">
+              <img
+                src={Linkedin}
+                alt="social Linkedin"
+                style={{ margin: "0 15px" }}
+              />
+            </a>
+          </WrapSocial>
         </Wrap>
       </FirstRow>
       <Logos>

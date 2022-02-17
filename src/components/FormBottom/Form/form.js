@@ -66,7 +66,7 @@ const Form = ({ title }) => {
             </label>
             <input
               className="submitButton"
-              value="ZANIMA ME DIGITALNA TRANSFORMACIJA"
+              value="KONTAKTIRAJ ME"
               type="submit"
             />
           </form>

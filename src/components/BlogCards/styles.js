@@ -8,10 +8,26 @@ export const WrapBlogCardsSection = styled.div`
   padding: 100px 130px;
   display: flex;
   justify-content: space-between;
-
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  & .slick-dots {
+    position: absolute;
+    bottom: -48px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  & .slick-dots li button:before {
+    font-size: 16px;
+  }
+  & .slick-dots li.slick-active button:before {
+    color: #1d9ed9;
+  }
+  @media screen and (max-width: 490px) {
+    padding: 80px 0px;
+    height: auto;
+    flex-direction: column;
   }
 `
 export const WrapBlogCard = styled.a`
@@ -25,9 +41,11 @@ export const WrapBlogCard = styled.a`
   align-items: center;
   text-decoration: none;
 
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    justify-content: center;
+
+    padding-top: 20px;
+    width: 100%;
   }
 `
 export const Title = styled.h4`
@@ -41,9 +59,8 @@ export const Title = styled.h4`
   /* Blue */
   width: 370px;
   color: #0d3151;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    width: 80%;
   }
 `
 export const ImageWrap = styled.div`
@@ -54,7 +71,6 @@ export const ImageWrap = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    width: 90%;
   }
 `
