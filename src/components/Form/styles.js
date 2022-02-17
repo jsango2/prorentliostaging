@@ -197,7 +197,7 @@ export const FieldsWrap = styled.div`
     & input {
       width: 100%;
       height: 60px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       padding-left: 20px;
     }
   }
