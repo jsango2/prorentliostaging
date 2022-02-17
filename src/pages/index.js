@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title="Rentlio Hoteli" />
       <Hero />
       <Testimonial />
       <FourFacts />

@@ -84,7 +84,7 @@ const Clients = () => {
               avatar={Murphy}
               owner="Kathryn Murphy"
               hotel="Hotel San Rocco"
-              overlay={current == 0 ? true : false}
+              overlay={current === 0 ? true : false}
               onClick={e => handleClick(e, 0)}
             />
             <Card
@@ -93,7 +93,7 @@ const Clients = () => {
               avatar={Wade}
               owner="Wade Warren"
               hotel="Hotel Bevanda"
-              overlay={current == 1 ? true : false}
+              overlay={current === 1 ? true : false}
               onClick={e => handleClick(e, 1)}
             />
             <Card
@@ -102,7 +102,7 @@ const Clients = () => {
               avatar={Wilson}
               owner="Jenny Wilson"
               hotel="Hotel Peteani"
-              overlay={current == 2 ? true : false}
+              overlay={current === 2 ? true : false}
               onClick={e => handleClick(e, 2)}
             />
           </>

@@ -70,7 +70,7 @@ export const HeroTitle = styled.h1`
   }
 `
 
-export const HeroParagraph = styled.p`
+export const HeroParagraph = styled.div`
   position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
