@@ -128,9 +128,8 @@ export const BoxGreenTitle = styled.h5`
 
   color: #a9cf3a;
   /* margin-bottom: 12px; */
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 490px) {
+    margin-left: 5px;
   }
 `
 export const Title = styled.h2`

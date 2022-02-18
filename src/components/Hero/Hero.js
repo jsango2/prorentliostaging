@@ -12,6 +12,7 @@ import {
 } from "./styles.js"
 import Lottie from "lottie-react"
 // import gradientAnimation from "../testimonial/animation"
+import { ParallaxProvider, useParallax, Parallax } from "react-scroll-parallax"
 
 const Hero = () => {
   return (
@@ -39,7 +40,6 @@ const Hero = () => {
       {/* <GradientBottomLine>
         <Lottie animationData={gradientAnimation} autoPlay={true} loop={true} />
       </GradientBottomLine> */}
-
       <Form />
     </HeroWrap>
   )

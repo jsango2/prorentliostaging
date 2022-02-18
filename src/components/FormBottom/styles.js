@@ -77,6 +77,7 @@ export const Title = styled.h1`
   color: #ffffff;
   @media screen and (max-width: 768px) {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 52px;
   }
 `
