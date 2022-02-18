@@ -18,6 +18,7 @@ const FourFacts = () => {
   return (
     <FourFactsWrap>
       <Fact
+        key={1}
         titleUp="Efikasno"
         slide="80% manje administracije"
         title="Odvojeni sustavi, a može jedan?"
@@ -32,6 +33,7 @@ const FourFacts = () => {
         image={p1}
       />
       <Fact
+        key={2}
         titleUp="Pouzdano"
         slide="3:36 minute za odgovor"
         title="Odgovor podrške čekate tjednima? "
@@ -46,6 +48,7 @@ const FourFacts = () => {
         image={p2}
       />
       <Fact
+        key={3}
         titleUp="Profitabilno"
         slide="25% viši prihodi"
         title="Propuštate prihode?"
@@ -60,6 +63,7 @@ const FourFacts = () => {
         image={p3}
       />
       <Fact
+        key={4}
         titleUp="Fleksibilno"
         slide=""
         title="Izvještaji kasne satima?"

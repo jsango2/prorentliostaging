@@ -10,7 +10,7 @@ export const HeroWrap = styled.div`
   background-size: cover;
   padding-left: 130px;
   padding-top: 96px;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 700px) {
     padding-left: 30px;
     /* order: 1;
     margin-bottom: 1rem; */
@@ -56,7 +56,7 @@ export const HeroTitle = styled.h1`
   line-height: 94px;
   color: #ffffff;
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 620px) {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -78,7 +78,9 @@ export const HeroParagraph = styled.div`
   font-size: 18px;
   line-height: 30px;
   /* or 167% */
-  width: 572px;
+  max-width: 572px;
+  min-width: 430px;
+  width: 37vw;
   height: auto;
   color: #ffffff;
 
@@ -86,6 +88,7 @@ export const HeroParagraph = styled.div`
     font-size: 16px;
     line-height: 24px;
     width: 90%;
+    min-width: auto;
 
     /* or 150% */
   }
@@ -98,7 +101,9 @@ export const HeroParagraph2 = styled.p`
   font-size: 18px;
   line-height: 30px;
   /* or 167% */
-  width: 572px;
+  max-width: 572px;
+  min-width: 430px;
+  width: 37vw;
   height: auto;
   color: #ffffff;
   margin-top: 30px;
@@ -106,6 +111,8 @@ export const HeroParagraph2 = styled.p`
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+    min-width: auto;
+
     font-weight: bold;
     font-size: 20px;
     /* or 150% */

@@ -9,6 +9,14 @@ export const TestimonialWrap = styled.div`
   padding-left: 130px;
 
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1150px) {
+    height: 1000px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    justify-content: flex-end;
+  }
   @media screen and (max-width: 430px) {
     height: 1000px;
     padding-left: 30px;
@@ -18,7 +26,18 @@ export const ContentWrap = styled.div`
   position: relative;
   width: 557px;
   height: 254px;
+  @media screen and (max-width: 1150px) {
+    margin: 0 auto;
+    /* position: absolute; */
+    /* bottom: 109px; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   @media screen and (max-width: 430px) {
+    height: 268px;
+
     margin: 0 auto;
     position: absolute;
     bottom: 109px;
@@ -37,8 +56,11 @@ export const Stars = styled.div`
   }
 `
 export const Title = styled.div`
-  width: 577px;
-  height: 48px;
+  width: 37vw;
+  max-width: 577px;
+  min-width: 430px;
+  min-height: 48px;
+  height: auto;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -51,6 +73,7 @@ export const Title = styled.div`
   color: #0d3151;
   @media screen and (max-width: 430px) {
     width: 95%;
+    min-width: auto;
     height: auto;
     font-size: 20px;
     line-height: 36px;
@@ -151,6 +174,6 @@ export const GradientBottomLine = styled.div`
     #1d9ed9 99.98%
   ); */
   @media screen and (max-width: 430px) {
-    width: 301%;
+    width: 401%;
   }
 `

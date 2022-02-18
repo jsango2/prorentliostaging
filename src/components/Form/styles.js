@@ -13,6 +13,13 @@ export const FormWrap = styled.div`
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   z-index: 2;
+  @media screen and (max-width: 1150px) {
+    max-width: 480px;
+    width: 95%;
+    top: 732px;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
   @media screen and (max-width: 430px) {
     width: 95%;
     top: 732px;
@@ -34,11 +41,13 @@ export const FormBehind = styled.div`
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 
-  @media screen and (max-width: 768px) {
-    width: 85%;
+  @media screen and (max-width: 1150px) {
     top: 723px;
     right: 50%;
     transform: translate(50%, 0);
+  }
+  @media screen and (max-width: 500px) {
+    width: 85%;
   }
 `
 export const LogoHero = styled.div`
@@ -191,7 +200,7 @@ export const FieldsWrap = styled.div`
     cursor: pointer;
     color: #ffffff;
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 1150px) {
     margin: 0 30px 40px 20px;
     width: 90%;
     & input {
