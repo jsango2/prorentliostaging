@@ -440,3 +440,16 @@ a:focus {
 .formBottomAnimation div:nth-child(3) {
   animation-delay: 1.5s;
 }
+.section {
+  opacity: 0;
+  transform: translate(0, 30%);
+  visibility: hidden;
+  transition: opacity 900ms ease-out, transform 900ms ease-out;
+  will-change: opacity, visibility;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

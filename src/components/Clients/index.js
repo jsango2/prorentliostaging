@@ -11,7 +11,6 @@ import useWindowSize from "../helper/useWindowSize"
 
 const Clients = () => {
   const size = useWindowSize()
-  console.log(size)
   const settings = {
     // arrows: true,
     dots: true,
@@ -43,7 +42,6 @@ const Clients = () => {
 
   const handleClick = (e, id) => {
     current === id ? setCurrent(1) : setCurrent(id)
-    console.log("klinuto", id)
   }
   return (
     <WrapClientsSection>

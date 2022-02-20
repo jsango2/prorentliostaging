@@ -49,7 +49,7 @@ export const Box = styled.div`
     }
   }
 `
-export const Photo = styled.div`
+export const PhotoComp = styled.div`
   position: relative;
   width: 580px;
   height: 400px;
@@ -132,7 +132,7 @@ export const BoxGreenTitle = styled.h5`
     margin-left: 5px;
   }
 `
-export const Title = styled.h2`
+export const Title1 = styled.h2`
   width: 100%;
   height: auto;
   font-family: "Roboto", sans-serif;
@@ -157,7 +157,7 @@ export const Paragraph = styled.h2`
   font-size: 16px;
   line-height: 24px;
   /* or 150% */
-
+  margin-bottom: 16px;
   color: #ffffff;
   @media screen and (max-width: 768px) {
     width: 100%;

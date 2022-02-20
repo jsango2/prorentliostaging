@@ -7,7 +7,7 @@ import p4 from "../../../static/images/monri.png"
 
 const Integrations = () => {
   return (
-    <WrapIntegrationsSection>
+    <WrapIntegrationsSection className="box">
       <Title>Spajanje servis, software</Title>
       <Text>
         Preuzmite kontrolu i povežite komunikacijske, računovodstvene,

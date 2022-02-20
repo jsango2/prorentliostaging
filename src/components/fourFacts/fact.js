@@ -2,16 +2,16 @@ import React from "react"
 import {
   Box,
   BoxGreenTitle,
-  Title,
+  Title1,
   Paragraph,
   TextBox,
-  Photo,
   BlueNumber,
   WrapTitle,
 } from "./styles.js"
 import { useInView } from "react-intersection-observer"
+import Photo from "./photo.js"
 
-const Fact = ({ titleUp, title, text, slide, image }) => {
+const Fact = ({ titleUp, title, textUp, textDown, slide, image, id }) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0.5,
@@ -19,8 +19,8 @@ const Fact = ({ titleUp, title, text, slide, image }) => {
     triggerOnce: true,
   })
   return (
-    <Box>
-      <TextBox ref={ref}>
+    <Box key={id} ref={ref}>
+      <TextBox>
         <WrapTitle>
           <BoxGreenTitle>{titleUp}</BoxGreenTitle>
           <BlueNumber
@@ -31,13 +31,11 @@ const Fact = ({ titleUp, title, text, slide, image }) => {
             <span className={` ${inView ? "fade-in" : ""}`}>{slide}</span>
           </BlueNumber>
         </WrapTitle>
-
-        <Title>{title}</Title>
-        <Paragraph>{text}</Paragraph>
+        <Title1>{title}</Title1>
+        <Paragraph>{textUp}</Paragraph>
+        <Paragraph>{textDown}</Paragraph>
       </TextBox>
-      <Photo>
-        <img src={image} alt="photo 1" />
-      </Photo>
+      <Photo image={image} />
     </Box>
   )
 }
