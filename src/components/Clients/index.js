@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { WrapClientsSection, Title, Cards } from "./styles.js"
 import Murphy from "../../../static/images/murphy.png"
 import Wade from "../../../static/images/Wade.png"
@@ -46,7 +46,7 @@ const Clients = () => {
   return (
     <WrapClientsSection>
       <Title>Što naši klijenti kažu o nama?</Title>
-      <Cards>
+      <Cards className="kartica">
         {size.width < 460 ? (
           <>
             <Slider {...settings}>
@@ -83,7 +83,9 @@ const Clients = () => {
               owner="Kathryn Murphy"
               hotel="Hotel San Rocco"
               overlay={current === 0 ? true : false}
-              onClick={e => handleClick(e, 0)}
+              // overlay={false}
+              // onClick={e => handleClick(e, 0)}
+              onMouseEnter={e => handleClick(e, 0)}
             />
             <Card
               title="Using Rentlio helped me increase my business!"
@@ -91,8 +93,9 @@ const Clients = () => {
               avatar={Wade}
               owner="Wade Warren"
               hotel="Hotel Bevanda"
+              // overlay={true}
               overlay={current === 1 ? true : false}
-              onClick={e => handleClick(e, 1)}
+              onMouseEnter={e => handleClick(e, 1)}
             />
             <Card
               title="Super friendly and easy to use system, a lifesaver!"
@@ -100,8 +103,9 @@ const Clients = () => {
               avatar={Wilson}
               owner="Jenny Wilson"
               hotel="Hotel Peteani"
+              // overlay={false}
               overlay={current === 2 ? true : false}
-              onClick={e => handleClick(e, 2)}
+              onMouseEnter={e => handleClick(e, 2)}
             />
           </>
         )}

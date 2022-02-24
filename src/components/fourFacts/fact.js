@@ -11,7 +11,20 @@ import {
 import { useInView } from "react-intersection-observer"
 import Photo from "./photo.js"
 
-const Fact = ({ titleUp, title, textUp, textDown, slide, image, id }) => {
+const Fact = ({
+  titleUp,
+  title,
+  textUp,
+  textDown,
+  slide,
+  image,
+  imageBg,
+  id,
+  position,
+  imageTop,
+  imageLeft,
+  width,
+}) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0.5,
@@ -35,7 +48,14 @@ const Fact = ({ titleUp, title, textUp, textDown, slide, image, id }) => {
         <Paragraph>{textUp}</Paragraph>
         <Paragraph>{textDown}</Paragraph>
       </TextBox>
-      <Photo image={image} />
+      <Photo
+        image={image}
+        imageBg={imageBg}
+        position={position}
+        imageTop={imageTop}
+        imageLeft={imageLeft}
+        width={width}
+      />
     </Box>
   )
 }

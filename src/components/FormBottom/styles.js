@@ -42,14 +42,16 @@ export const FormBox = styled.div`
     height: 625px;
   }
 `
-export const ThreeFacts = styled.div`
-  height: 190px;
+export const TwoFacts = styled.div`
+  height: 232px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 60px;
   @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+    height: 262px;
+
+    margin-bottom: 0px;
   }
 `
 export const Fact = styled.div`
@@ -68,16 +70,32 @@ export const Fact = styled.div`
   }
 `
 export const Title = styled.h1`
+  width: 85%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 50px;
-  line-height: 59px;
+  font-size: 40px;
+  line-height: 47px;
   margin-bottom: 90px;
   color: #ffffff;
   @media screen and (max-width: 768px) {
+    width: 100%;
+
     text-align: center;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 37px;
+    line-height: 49px;
+    margin: 0 auto 40px auto;
+  }
+`
+export const IspuniPodatke = styled.div`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+
+  color: #ffffff;
+  @media screen and (max-width: 768px) {
   }
 `

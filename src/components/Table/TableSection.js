@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useState, useEffect } from "react"
 import {
   TableSectionWrap,
   Intro,
@@ -9,7 +9,13 @@ import {
   LogoHero,
   SingleDataRentlio,
   RentlioBox,
+  RentlioBoxBack,
   TradicionalanSustav,
+  TraditionalData,
+  WrapTable,
+  RentlioDataBackc,
+  WrapRows,
+  Ghost,
 } from "./styles.js"
 import { tableData } from "./tableData.js"
 import No from "../../../static/images/x.svg"
@@ -17,44 +23,34 @@ import Yes from "../../../static/images/yes.svg"
 const TableSection = () => {
   return (
     <TableSectionWrap>
-      <Intro>
-        Hotelskim sustavima lociranima u vašim objektima istekao je rok
-        trajanja. Traže velika ulaganja, nedovoljno su fleksibilni. <br />
-        <br />
-        Rentlio je cloud rješenje koje se prilagođava vašim hotelskim
-        operacijama i potrebama, oblak u kojem je, u realnom vremenu, sigurno
-        smještena vaša usluga uz sve podatke i procese.
-      </Intro>
+      <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
       <Table>
         <TradicionalanSustav>Tradicionalan sustav</TradicionalanSustav>
-        <RentlioBox>
-          <LogoHero>
-            <img src="/images/RentlioLogoTamni.svg" alt="Logo" />
-          </LogoHero>
-          {tableData.map(data => (
-            <SingleDataRentlio key={data.info}>
-              <Icon>
-                {data.rentlio ? (
-                  <img src={Yes} alt="" />
-                ) : (
-                  <img src={No} alt="" />
-                )}
-              </Icon>
-            </SingleDataRentlio>
-          ))}
-        </RentlioBox>
-        {tableData.map(data => (
-          <SingleData key={data.info}>
-            <Data>{data.info}</Data>
-            <Icon>
-              {data.rentlio ? (
-                <img src={No} alt="" />
-              ) : (
-                <img src={Yes} alt="" />
-              )}
-            </Icon>
-          </SingleData>
-        ))}
+
+        <WrapRows>
+          <RentlioBox>
+            <LogoHero>
+              <img src="/images/RentlioLogoTamni.svg" alt="Logo" />
+            </LogoHero>
+            {tableData.map(data => (
+              <SingleDataRentlio key={data.info}>
+                <Icon>{data.rentlio}</Icon>
+              </SingleDataRentlio>
+            ))}
+          </RentlioBox>
+          <WrapTable>
+            {tableData.map(data => (
+              <>
+                <Ghost className="ghost" />
+                <SingleData key={data.info} className="singleData">
+                  <Data>{data.info}</Data>
+                  <RentlioDataBackc>{data.rentlio}</RentlioDataBackc>
+                  <TraditionalData>{data.traditional}</TraditionalData>
+                </SingleData>
+              </>
+            ))}
+          </WrapTable>
+        </WrapRows>
       </Table>
     </TableSectionWrap>
   )

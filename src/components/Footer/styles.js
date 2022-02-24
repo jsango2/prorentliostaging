@@ -63,12 +63,24 @@ export const Wrap = styled.div`
 export const WrapSocial = styled.div`
   display: flex;
   align-items: center;
+  transform: scale(1);
+  a {
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    bottom: 0;
+  }
 
+  a:hover {
+    transform: scale(1.1);
+    bottom: 2px;
+  }
   @media screen and (max-width: 490px) {
     margin-top: 50px;
   }
 `
 export const Text = styled.a`
+  position: relative;
+  bottom: 0;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -79,6 +91,13 @@ export const Text = styled.a`
   /* Blue */
   margin: 0;
   color: #0d3151;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    bottom: 2px;
+    color: #124572;
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 490px) {
     margin-bottom: 30px;
   }

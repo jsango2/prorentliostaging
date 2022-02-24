@@ -1,8 +1,8 @@
 import React from "react"
-import { PhotoComp } from "./styles.js"
+import { PhotoComp, PhotoOverlay } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
-const Photo = ({ image }) => {
+const Photo = ({ image, imageBg, position, imageTop, imageLeft }) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0.5,
@@ -10,8 +10,19 @@ const Photo = ({ image }) => {
     triggerOnce: true,
   })
   return (
-    <PhotoComp ref={ref} className={`section ${inView ? " is-visible" : ""} `}>
-      <img src={image} alt="" />
+    <PhotoComp
+      photo={imageBg}
+      position={position}
+      ref={ref}
+      className={`section ${inView ? " is-visible" : ""} `}
+    >
+      <PhotoOverlay
+        imageTop={imageTop}
+        imageLeft={imageLeft}
+        className={`sectionOverlay ${inView ? " photoStart" : "photoEnd"} `}
+      >
+        <img src={image} alt="" width="115%" />
+      </PhotoOverlay>
     </PhotoComp>
   )
 }

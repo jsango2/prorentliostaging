@@ -8,6 +8,7 @@ export const WrapBlogCardsSection = styled.div`
   padding: 100px 130px;
   display: flex;
   justify-content: space-between;
+
   & .slick-dots {
     position: absolute;
     bottom: -48px;
@@ -40,11 +41,27 @@ export const WrapBlogCard = styled.a`
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+  /* overflow: hidden; */
+  &:nth-child(1) {
+    margin-right: 10px;
+  }
+  &:nth-child(2) {
+    margin: 0 10px;
+  }
+  &:nth-child(3) {
+    margin-left: 10px;
+  }
+  & .image {
+    transition: transform 0.6s cubic-bezier(0.3, 0.61, 0.45, 0.94) 0s;
+  }
 
+  &:hover .image {
+    transform: scale(1.051);
+  }
   @media screen and (max-width: 490px) {
-    justify-content: center;
+    justify-content: flex-start;
 
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
   }
 `
@@ -61,18 +78,27 @@ export const Title = styled.h4`
   color: #0d3151;
   padding: 0 10px;
   @media screen and (max-width: 490px) {
-    margin-top: 0;
+    margin-top: 20px;
     width: 80%;
   }
 `
 export const ImageWrap = styled.div`
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05));
-  width: 387px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
   height: 230px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   @media screen and (max-width: 768px) {
     width: 90%;
+  }
+`
+export const Image = styled.div`
+  width: 100%;
+  height: 100%;
+
+  background: ${props => `url(${props.photo}) `};
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
   }
 `

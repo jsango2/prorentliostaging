@@ -1,19 +1,34 @@
 import React from "react"
-import { WrapIntegrationsSection, Title, Text, Logos, Image } from "./styles.js"
+import {
+  WrapIntegrationsSection,
+  Title,
+  Text,
+  Logos,
+  Image,
+  SaznajKako,
+  Linija,
+} from "./styles.js"
 import p1 from "../../../static/images/remaris.png"
-import p2 from "../../../static/images/gastrobit.png"
-import p3 from "../../../static/images/ritam.png"
+import p2 from "../../../static/images/hoteza.png"
+import p3 from "../../../static/images/minimax.png"
 import p4 from "../../../static/images/monri.png"
+import Lottie, { useLottie, useLottieInteractivity } from "lottie-react"
+import gradientAnimation from "../../components/testimonial/animation"
+import { GradientBottomLine } from "../../components/testimonial/styles.js"
 
 const Integrations = () => {
   return (
     <WrapIntegrationsSection className="box">
-      <Title>Spajanje servis, software</Title>
+      <Title>Povežite što želite</Title>
       <Text>
-        Preuzmite kontrolu i povežite komunikacijske, računovodstvene,
-        ugostiteljske i ostale usluge koje donose pravu vrijednost vašim
-        hotelskim operacijama. 
+        Bez odugovlačenja, bez dodatnog osoblja - povezivanje bez dodatnih
+        naknada. Povežite (sve, baš sve) što vaš hotel treba.
       </Text>
+      <SaznajKako>
+        <a href="https://rentl.io/integracije">Saznaj kako</a>
+        <Linija />
+      </SaznajKako>
+
       <Logos>
         <Image>
           <img src={p1} alt="p1" height="100%" />
@@ -28,6 +43,9 @@ const Integrations = () => {
           <img src={p4} alt="p4" height="100%" />
         </Image>
       </Logos>
+      <GradientBottomLine>
+        <Lottie animationData={gradientAnimation} autoPlay={true} loop={true} />
+      </GradientBottomLine>
     </WrapIntegrationsSection>
   )
 }

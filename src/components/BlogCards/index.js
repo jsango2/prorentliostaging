@@ -1,8 +1,8 @@
 import React from "react"
 import { WrapBlogCardsSection } from "./styles"
-import p1 from "../../../static/images/blogcard1.png"
-import p2 from "../../../static/images/blogcard2.png"
-import p3 from "../../../static/images/blogcard3.png"
+import p1 from "../../../static/images/blogcard1.jpeg"
+import p2 from "../../../static/images/blogcard2.jpeg"
+import p3 from "../../../static/images/blogcard3.jpeg"
 import BlogCard from "./blogCard"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -46,17 +46,20 @@ const BlogCards = () => {
           <Slider {...settings}>
             <BlogCard
               photo={p1}
+              photoUrl="http://cms.rentl.io/wp-content/uploads/2021/02/annie-spratt-qyAka7W5uMY-unsplash.jpg"
               title="Samo je jedan trend u turizmu – digitalna transformacija"
               link="https://www.rentl.io/1"
             />
             <BlogCard
               photo={p2}
+              photoUrl="http://cms.rentl.io/wp-content/uploads/2021/02/fran-hogan-VPci0fN-7t4-unsplash.jpg"
               title="Kada je pravo vrijeme za promjenu PMS-a i channel managera?"
               link="https://www.rentl.io/2"
             />
 
             <BlogCard
               photo={p3}
+              photoUrl="http://cms.rentl.io/wp-content/uploads/2021/07/christopher-gower-m_HRfLhgABo-unsplash-2.jpg"
               title="Važnost dvosmjerne veze PMS sustava"
               link="https://www.rentl.io/3"
             />

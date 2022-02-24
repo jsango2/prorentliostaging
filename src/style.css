@@ -391,9 +391,18 @@ a:focus {
  */
 @-webkit-keyframes fade-in {
   0% {
+    transform: scale(0);
+
     opacity: 0;
   }
+  85% {
+    transform: scale(1.05);
+
+    opacity: 1;
+  }
   100% {
+    transform: scale(1);
+
     opacity: 1;
   }
 }
@@ -401,6 +410,11 @@ a:focus {
   0% {
     transform: scale(0);
     opacity: 0;
+  }
+  85% {
+    transform: scale(1.05);
+
+    opacity: 1;
   }
   100% {
     transform: scale(1);
@@ -415,11 +429,8 @@ a:focus {
     transform: scale(0.1);
   }
 
-  85% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -427,7 +438,7 @@ a:focus {
   display: none;
 }
 .formBottomAnimation div {
-  animation: FadeIn 1s linear;
+  animation: FadeIn 1.5s ease-out;
   animation-fill-mode: both;
 }
 
@@ -452,4 +463,49 @@ a:focus {
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.noVisibleOverlay {
+  /* display: none; */
+}
+.visibleOverlay {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+/* .singleDataRentlio:hover {
+  border: 1px solid #1d9ed9;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  z-index: 4;
+  box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
+  transform: scale(1.04);
+} */
+.ghost:hover + .singleData {
+  border: 1px solid #1d9ed9;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 4;
+  width: 1186px;
+
+  box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
+}
+.sectionOverlay {
+  transform: translate(40%, 0%);
+  transition: transform 1.8s cubic-bezier(0.11, 0.64, 0.26, 0.98);
+}
+
+.photoStart {
+  transform: translate(0%, 0%);
+}
+.photoEnd {
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionOverlay img {
+    width: 210%;
+  }
+  .photoStart {
+    transform: translate(-100%, -18%);
+  }
 }

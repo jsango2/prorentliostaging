@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes, css } from "styled-components"
 import bg4 from "../../images/bg4.png"
 
 export const FourFactsWrap = styled.div`
@@ -51,18 +51,37 @@ export const Box = styled.div`
 `
 export const PhotoComp = styled.div`
   position: relative;
+  z-index: 1;
   width: 580px;
   height: 400px;
   /* background-color: azure; */
   border-radius: 15px;
   overflow: hidden;
-  img {
+  background: ${props => `url(${props.photo}) `};
+  background-size: cover;
+  background-position: ${props =>
+    props.position ? props.position : "50% 50%"};
+  /* img {
     object-fit: contain;
-  }
+  } */
   @media screen and (max-width: 430px) {
     width: 100%;
     height: 62vw;
     margin-top: 69px;
+  }
+`
+export const PhotoOverlay = styled.div`
+  position: absolute;
+  z-index: 2;
+  top: ${props => props.imageTop};
+  left: ${props => props.imageLeft};
+  width: ${props => props.width};
+  height: 100%;
+  img {
+    -webkit-box-shadow: -2px 0px 15px 5px rgba(0, 36, 69, 0.3);
+    box-shadow: -2px 0px 15px 5px rgba(0, 36, 69, 0.3);
+  }
+  @media screen and (max-width: 430px) {
   }
 `
 export const TextBox = styled.div`
@@ -88,6 +107,7 @@ export const WrapTitle = styled.div`
     align-items: flex-start;
   }
 `
+
 export const BlueNumber = styled.div`
   position: relative;
   min-width: 170px;
@@ -104,6 +124,7 @@ export const BlueNumber = styled.div`
   /* identical to box height */
 
   color: #ffffff;
+  /* opacity: 0; */
 
   @media screen and (max-width: 430px) {
     width: auto;
@@ -117,6 +138,7 @@ export const BlueNumber = styled.div`
     margin-top: 10px;
   }
 `
+
 export const BoxGreenTitle = styled.h5`
   font-family: "Roboto", sans-serif;
   font-style: normal;
