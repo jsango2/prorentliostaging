@@ -34,9 +34,9 @@ import useWindowSize from "../helper/useWindowSize"
 
 const TableSection = () => {
   const size = useWindowSize()
+  console.log(size)
   return (
     <>
-      {console.log(size.width)}
       {size.width > 768 ? (
         <TableSectionWrap>
           <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
@@ -71,6 +71,8 @@ const TableSection = () => {
         </TableSectionWrap>
       ) : (
         <TableSectionWrap>
+          <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
+
           <TableMobWrap>
             <LeftMob>
               <LogoMob>
