@@ -73,7 +73,8 @@ export const Fact = styled.div`
 `
 export const Title = styled.h1`
   width: 85%;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
+
   font-style: normal;
   font-weight: 900;
   font-size: 40px;

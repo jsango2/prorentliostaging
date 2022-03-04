@@ -36,9 +36,10 @@ const FormBottom = () => {
             <img src={Yes} alt="yes" style={{ marginRight: "20px" }} />
             Potpuno rješenje za upravljanje hotelom
           </Fact>
-          <IspuniPodatke>
-            Ispuni podatke i ostvari pun potencijal!
-          </IspuniPodatke>
+          <Fact>
+            <img src={Yes} alt="yes" style={{ marginRight: "20px" }} />
+            Smanjite operativne troškove za x%
+          </Fact>
         </TwoFacts>
       </TextBox>
       <FormBox>

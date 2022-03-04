@@ -435,6 +435,7 @@ a:focus {
     transform: scale(1);
   }
 }
+
 .formBottomAnimationNone div {
   display: none;
 }

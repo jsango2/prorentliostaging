@@ -58,7 +58,6 @@ export const HeroTitle = styled.h1`
   color: #ffffff;
 
   @media screen and (max-width: 620px) {
-    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
