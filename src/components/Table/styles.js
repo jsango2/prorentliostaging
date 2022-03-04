@@ -104,7 +104,7 @@ export const WrapMobRentlioBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-top: 30px;
   padding-left: 30px;
@@ -127,7 +127,7 @@ export const WrapTraditionalBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-top: 30px;
   padding-left: 30px;

@@ -93,6 +93,10 @@ const TableSection = () => {
               {tableData.map(data => (
                 <React.Fragment key={data.info}>
                   <WrapTraditionalBox>
+                    <RentlioTitleMob style={{ opacity: "0" }}>
+                      {data.info}
+                    </RentlioTitleMob>
+
                     <TraditionalTextMob>{data.traditional}</TraditionalTextMob>
                   </WrapTraditionalBox>
                 </React.Fragment>
