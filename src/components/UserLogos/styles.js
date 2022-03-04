@@ -9,6 +9,7 @@ export const UserLogosWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */

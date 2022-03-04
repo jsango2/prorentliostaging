@@ -8,7 +8,7 @@ export const WrapBlogCardsSection = styled.div`
   padding: 100px 130px;
   display: flex;
   justify-content: space-between;
-
+  overflow: hidden;
   & .slick-dots {
     position: absolute;
     bottom: -48px;

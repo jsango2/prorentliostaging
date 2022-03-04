@@ -54,7 +54,7 @@ const FourFacts = () => {
       <Fact
         key={4}
         titleUp="Fleksibilno"
-        slide=""
+        slide="Izvještaji u <30 sekundi"
         title="Izvještaji kasne satima?"
         textUp="Tratite vrijeme danima čekajući izvještaje pune neusklađenih podataka? "
         textDown="Pristupite pouzdanim podacima i izvješćima u roku jednog klika uz rentlio 3 u 1 rješenje."

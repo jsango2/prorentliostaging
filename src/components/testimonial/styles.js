@@ -7,7 +7,7 @@ export const TestimonialWrap = styled.div`
   background: #ffffff;
   padding-top: 100px;
   padding-left: 130px;
-
+  overflow: hidden;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@ export const GradientBottomLine = styled.div`
   height: 10px;
   left: 0;
   bottom: 6px;
-
+  /* overflow: hidden; */
   /* Rentlio gradient */
 
   /* background: linear-gradient(

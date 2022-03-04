@@ -22,7 +22,7 @@ const Clients = () => {
     autoplay: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     // responsive: [
     //   {
     //     breakpoint: 450,

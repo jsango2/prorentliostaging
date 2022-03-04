@@ -7,6 +7,7 @@ export const WrapClientsSection = styled.div`
   height: 789px;
   padding-top: 60px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  /* overflow: hidden; */
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -14,6 +15,7 @@ export const WrapClientsSection = styled.div`
 `
 export const Cards = styled.div`
   display: flex;
+  display: -webkit-flex;
   width: 90%;
   justify-content: space-around;
   margin: 150px auto 0 auto;
@@ -37,6 +39,7 @@ export const Cards = styled.div`
     margin: 80px auto 0 auto;
 
     flex-direction: column;
+    -webkit-box-orient: vertical;
   }
 `
 export const Title = styled.h1`
@@ -101,7 +104,9 @@ export const CardText = styled.p`
 export const CardWrap = styled.div`
   position: relative;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
   align-items: center;
   width: 360px;
   height: 502px;

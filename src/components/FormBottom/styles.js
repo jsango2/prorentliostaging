@@ -8,6 +8,7 @@ export const WrapFormBottom = styled.div`
   height: 800px;
 
   display: flex;
+  overflow: hidden;
   @media screen and (max-width: 430px) {
     height: auto;
     flex-direction: column;

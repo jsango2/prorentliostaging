@@ -12,6 +12,7 @@ export const WrapFooterSection = styled.div`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   @media screen and (max-width: 490px) {
     padding-top: 150px;
 

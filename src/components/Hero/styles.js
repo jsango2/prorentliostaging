@@ -10,6 +10,7 @@ export const HeroWrap = styled.div`
   background-size: cover;
   padding-left: 130px;
   padding-top: 96px;
+  /* overflow: hidden; */
   @media screen and (max-width: 700px) {
     padding-left: 30px;
     /* order: 1;

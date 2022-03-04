@@ -13,7 +13,6 @@ import Integrations from "../components/Integrations"
 import FormBottom from "../components/FormBottom"
 import BlogCards from "../components/BlogCards"
 import Footer from "../components/Footer"
-import { ParallaxProvider, useParallax } from "react-scroll-parallax"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -31,7 +30,6 @@ const BlogIndex = ({ data, location }) => {
       <FormBottom />
       <BlogCards />
       <Footer />
-      {/* <Support /> */}
     </Layout>
   )
 }
