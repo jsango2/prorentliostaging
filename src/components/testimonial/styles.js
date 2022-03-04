@@ -17,7 +17,9 @@ export const TestimonialWrap = styled.div`
     padding-bottom: 100px;
     justify-content: flex-end;
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 490px) {
+    width: 100vw;
+
     height: 1000px;
     padding-left: 30px;
   }

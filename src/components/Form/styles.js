@@ -6,6 +6,7 @@ export const FormWrap = styled.div`
   height: 609px;
   background: #ffffff;
   /* Gray04 */
+  overflow: hidden;
   top: 510px;
   right: 130px;
   border: 1px solid #eaeaea;

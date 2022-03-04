@@ -26,6 +26,7 @@ export const WrapBlogCardsSection = styled.div`
     color: #1d9ed9;
   }
   @media screen and (max-width: 490px) {
+    width: 100vw;
     padding: 50px 0px 120px 0px;
     height: 550px;
     flex-direction: column;

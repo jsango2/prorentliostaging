@@ -8,7 +8,9 @@ export const WrapClientsSection = styled.div`
   padding-top: 60px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
   /* overflow: hidden; */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 490px) {
+    width: 100vw;
+
     /* order: 1;
     margin-bottom: 1rem; */
   }

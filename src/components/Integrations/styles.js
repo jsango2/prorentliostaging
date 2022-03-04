@@ -15,6 +15,8 @@ export const WrapIntegrationsSection = styled.div`
   justify-content: flex-start;
   overflow: hidden;
   @media screen and (max-width: 430px) {
+    width: 100vw;
+
     height: auto;
     padding: 100px 10px 90px 10px;
   }

@@ -14,6 +14,8 @@ export const WrapFooterSection = styled.div`
   flex-direction: column;
   overflow: hidden;
   @media screen and (max-width: 490px) {
+    width: 100vw;
+
     padding-top: 150px;
 
     height: auto;

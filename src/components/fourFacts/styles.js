@@ -16,7 +16,9 @@ export const FourFactsWrap = styled.div`
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   overflow: hidden;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 490px) {
+    width: 100vw;
+
     padding-top: 80px;
     padding-bottom: 50px;
     padding-left: 20px;

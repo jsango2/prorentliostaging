@@ -37,9 +37,7 @@ const Hero = () => {
           </HeroParagraph2>
         </HeroParagraph>
       </div>
-      {/* <GradientBottomLine>
-        <Lottie animationData={gradientAnimation} autoPlay={true} loop={true} />
-      </GradientBottomLine> */}
+
       <Form />
     </HeroWrap>
   )
