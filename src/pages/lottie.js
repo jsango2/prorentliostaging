@@ -48,9 +48,15 @@ const LottieControl = () => {
 
       animationData,
     })
-
+    console.log(document.body.scrollHeight)
     function animatebodymovin(duration) {
-      const scrollPosition = window.scrollY
+      let scrollPosition = window.scrollY
+      if (scrollPosition >= 8000) {
+        window.scrollTo({
+          top: 0,
+          // behavior: "smooth",
+        })
+      }
       // const scrollPosition = pinc
       const maxFrames = anim.totalFrames
       // const frame = (maxFrames / 1) * ((scrollPosition/1000) / (duration *10));
