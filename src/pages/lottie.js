@@ -79,6 +79,7 @@ const LottieControl = () => {
             height: "100vh",
             width: "100vw",
             display: "flex",
+            touchAction: "none",
           }}
           ref={lottieRef}
           id="myElement"
