@@ -255,6 +255,7 @@ a:focus {
   margin-top: 28px;
   cursor: pointer;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

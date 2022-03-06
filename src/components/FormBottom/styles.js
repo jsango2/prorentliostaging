@@ -87,7 +87,7 @@ export const Title = styled.h1`
     text-align: center;
     font-size: 37px;
     line-height: 49px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 60px auto;
   }
 `
 export const IspuniPodatke = styled.div`
