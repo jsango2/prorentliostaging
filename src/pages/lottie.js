@@ -5,6 +5,7 @@ import { useSpring, animated, to } from "@react-spring/web"
 import { useGesture } from "@use-gesture/react"
 
 const LottieControl = () => {
+  console.log(animationData)
   const [pinc, setPinc] = useState(1)
   const [newdata, setNewData] = useState()
   const target = useRef(null)
@@ -25,11 +26,12 @@ const LottieControl = () => {
         memo,
         distance: [dr],
         delta,
-      }) =>
+      }) => {
         window.scrollTo({
-          top: s,
+          top: s + 1,
           behavior: "smooth",
-        }),
+        })
+      },
     },
 
     {
@@ -51,7 +53,7 @@ const LottieControl = () => {
     console.log(document.body.scrollHeight)
     function animatebodymovin(duration) {
       let scrollPosition = window.scrollY
-      if (scrollPosition >= 8000) {
+      if (scrollPosition >= 9200) {
         window.scrollTo({
           top: 0,
           // behavior: "smooth",
@@ -61,6 +63,7 @@ const LottieControl = () => {
       const maxFrames = anim.totalFrames
       // const frame = (maxFrames / 1) * ((scrollPosition/1000) / (duration *10));
       const frame = (maxFrames / 1) * (scrollPosition / 10 / duration)
+      console.log(maxFrames, frame)
       anim.goToAndStop(frame, true)
     }
     animatebodymovin(animDuration)
@@ -78,7 +81,7 @@ const LottieControl = () => {
 
   return (
     <animated.div ref={target}>
-      <div style={{ height: "10000px", position: "relative" }}>
+      <div style={{ height: "11000px", position: "relative" }}>
         <div
           style={{
             position: "fixed",
