@@ -14,31 +14,29 @@ const LottieControl = () => {
     config: { mass: 1115, tension: 11, friction: 1 },
   }))
   let ts
-  // useGesture(
-  //   {
-  //     onPinch: ({
-  //       origin: [ox, oy],
-  //       first,
-  //       movement: [ms],
-  //       offset: [s, a],
-  //       lastOffset,
-  //       memo,
-  //       distance: [dr],
-  //       delta,
-  //     }) => (
-  //       window.scrollTo({
-  //         top: Math.pow(s, 1 / 4),
-  //         behavior: "smooth",
-  //       }),
-  //       console.log(ms)
-  //     ),
-  //   },
+  useGesture(
+    {
+      onPinch: ({
+        origin: [ox, oy],
+        first,
+        movement: [ms],
+        offset: [s, a],
+        lastOffset,
+        memo,
+        distance: [dr],
+        delta,
+      }) =>
+        window.scrollTo({
+          top: s,
+          behavior: "smooth",
+        }),
+    },
 
-  //   {
-  //     target,
-  //     eventOptions: { passive: false },
-  //   }
-  // )
+    {
+      target,
+      eventOptions: { passive: false },
+    }
+  )
 
   React.useEffect(() => {
     var animDuration = 1000
