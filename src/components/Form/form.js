@@ -49,7 +49,11 @@ const Form = ({ title }) => {
             />{" "}
             <label className="container">
               Želim primati Rentlio newsletter za hotele
-              <input type="checkbox" defaultChecked="checked" />
+              <input
+                type="checkbox"
+                defaultChecked="checked"
+                name="recieveNewsletter"
+              />
               <span className="checkmark"></span>
             </label>
             <input
