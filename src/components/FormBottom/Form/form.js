@@ -1,11 +1,15 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { FormWrap, FormBehind, FormTitle, FieldsWrap } from "./styles.js"
 
 const Form = ({ title }) => {
   return (
     <>
+      <Helmet>
+        <script src="https://webforms.pipedrive.com/f/loader"></script>
+      </Helmet>
       <FormWrap>
-        <FormTitle></FormTitle>
+        {/* <FormTitle></FormTitle>
 
         <FieldsWrap>
           <form
@@ -23,42 +27,21 @@ const Form = ({ title }) => {
               required
             />
             <input type="email" placeholder="Email" name="email" required />
-            {/* <input
-              type="text"
-              placeholder="Pozicija"
-              name="pozicija"
-              required
-            /> */}
+         
             <input
               type="text"
               placeholder="Ime objekta"
               name="ime objekta"
               required
             />
-            {/* <div style={{ display: "flex", justifyContent: "space-between" }}> */}
-            {/* <input
-                style={{ width: "130px" }}
-                type="number"
-                placeholder="Broj jedinica"
-                name="broj jedinica"
-                min="1"
-                max="999"
-                required
-              />{" "} */}
+          
             <input
-              // style={{ width: "270px" }}
               type="tel"
               placeholder="Broj telefona"
               name="broj telefona"
               required
             />{" "}
-            {/* </div> */}
-            {/* <input
-              type="text"
-              placeholder="Koji PMS koristite?"
-              name="PMS"
-              required
-            /> */}
+          
             <label className="container">
               Želim primati Rentlio newsletter za hotele
               <input type="checkbox" defaultChecked="checked" />
@@ -70,7 +53,11 @@ const Form = ({ title }) => {
               type="submit"
             />
           </form>
-        </FieldsWrap>
+        </FieldsWrap> */}
+        <div
+          className="pipedriveWebForms"
+          data-pd-webforms="https://webforms.pipedrive.com/f/JJX6B6Lc6P3UBwqFymiXk3rK8vxUcKI88zr6IyurUq7FDYr4tjVWYHJUOZUSeTV"
+        ></div>
       </FormWrap>
     </>
   )

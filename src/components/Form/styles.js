@@ -51,6 +51,15 @@ export const FormBehind = styled.div`
     width: 85%;
   }
 `
+export const WrapPipe = styled.div`
+  /* & input {
+    border: 2px solid red !important;
+  } */
+  @media screen and (max-width: 768px) {
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+`
 export const LogoHero = styled.div`
   position: relative;
   top: 68px;

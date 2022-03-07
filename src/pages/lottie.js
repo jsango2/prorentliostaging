@@ -14,12 +14,14 @@ const LottieControl = () => {
   const [{ d, a }, api] = useSpring(() => ({
     config: { mass: 1115, tension: 11, friction: 1 },
   }))
-  let ts
+  let length = 0
   useGesture(
     {
       onPinch: ({
+        da,
         origin: [ox, oy],
         first,
+        initial,
         movement: [ms],
         offset: [s, a],
         lastOffset,
@@ -27,8 +29,11 @@ const LottieControl = () => {
         distance: [dr],
         delta,
       }) => {
+        length = length + delta[0]
+
+        console.log(length)
         window.scrollTo({
-          top: s + 1,
+          top: length,
           behavior: "smooth",
         })
       },
@@ -50,7 +55,6 @@ const LottieControl = () => {
 
       animationData,
     })
-    console.log(document.body.scrollHeight)
     function animatebodymovin(duration) {
       let scrollPosition = window.scrollY
       if (scrollPosition >= 9200) {
@@ -63,7 +67,6 @@ const LottieControl = () => {
       const maxFrames = anim.totalFrames
       // const frame = (maxFrames / 1) * ((scrollPosition/1000) / (duration *10));
       const frame = (maxFrames / 1) * (scrollPosition / 10 / duration)
-      console.log(maxFrames, frame)
       anim.goToAndStop(frame, true)
     }
     animatebodymovin(animDuration)
