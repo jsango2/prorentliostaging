@@ -273,7 +273,16 @@ a:focus {
 .pipedriveWebForms {
   padding: 30px !important;
 }
+.modalForm {
+  transition: opacity 2s ease-in-out;
+}
+.showModal {
+  opacity: 1;
+}
 
+.hideModal {
+  opacity: 0;
+}
 /* .cxfkcg {
   width: 100%;
   height: 60px !important;

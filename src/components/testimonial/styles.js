@@ -12,7 +12,7 @@ export const TestimonialWrap = styled.div`
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 1150px) {
-    height: 1000px;
+    height: 1100px;
     padding-left: 30px;
     padding-bottom: 100px;
     justify-content: flex-end;
@@ -20,7 +20,7 @@ export const TestimonialWrap = styled.div`
   @media screen and (max-width: 490px) {
     width: 100vw;
 
-    height: 1000px;
+    height: 1080px;
     padding-left: 30px;
   }
 `

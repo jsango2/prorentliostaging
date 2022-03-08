@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
-  height: 609px;
+  height: 668px;
   background: #ffffff;
   /* Gray04 */
   overflow: hidden;
@@ -49,6 +49,31 @@ export const FormBehind = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 85%;
+  }
+`
+export const FormOverlay = styled.div`
+  position: absolute;
+  width: 440px;
+  height: 646px;
+  right: 150px;
+  bottom: -406px;
+  z-index: 2;
+  background: #ffff;
+  /* box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); */
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0d3151;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 500px) {
   }
 `
 export const WrapPipe = styled.div`
@@ -220,7 +245,7 @@ export const FieldsWrap = styled.div`
     border: 1px solid #0d3151;
     box-sizing: border-box;
     /* Blue shadow */
-    margin-top: 86px;
+    margin-top: 20px;
     box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
     border-radius: 16px;
     font-family: "Roboto", sans-serif;

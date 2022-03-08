@@ -5,8 +5,10 @@ import {
   FormTitle,
   FieldsWrap,
   WrapPipe,
+  FormOverlay,
 } from "./styles.js"
 import { Helmet } from "react-helmet"
+import logo from "../../../static/images/RentlioLogoTamni.svg"
 
 const encode = data => {
   return Object.keys(data)
@@ -22,7 +24,11 @@ class Form2 extends React.Component {
       email: "",
       brojTelefona: "",
       imeObjekta: "",
-      // recieveNewsletter: true,
+      brojSoba: "",
+      mjesto: "",
+      sustav: "",
+      showModal: false,
+      thanks: false,
     }
   }
 
@@ -33,16 +39,34 @@ class Form2 extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
+    }).then(res => {
+      console.log(res)
+      this.setState({ showModal: true })
+      setTimeout(() => {
+        this.setState({ thanks: true })
+      }, 500)
+      setTimeout(() => {
+        this.setState({
+          ime: "",
+          email: "",
+          brojTelefona: "",
+          imeObjekta: "",
+          showModal: false,
+          thanks: false,
+          brojSoba: "",
+          mjesto: "",
+          sustav: "",
+        })
+      }, 5000)
     })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
+
     e.preventDefault()
-    console.log(this.state)
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
   render() {
-    const { ime, email, brojTelefona, imeObjekta } = this.state
+    const { ime, email, brojTelefona, imeObjekta, brojSoba, mjesto, sustav } =
+      this.state
     return (
       <>
         {/* <FormWrap>
@@ -113,12 +137,15 @@ class Form2 extends React.Component {
               <input type="email" name="email" />
               <input type="text" name="imeObjekta" />
               <input type="tel" name="brojTelefona" />
+              <input type="text" name="mjesto" />
+              <input type="text" name="sustav" />
+              <input type="number" name="brojJedinica" />
               {/* <input type="checkbox" name="recieveNewsletter" /> */}
             </form>
             <form onSubmit={this.handleSubmit}>
               <input
                 type="text"
-                placeholder="Ime i Prezime"
+                placeholder="Ime i prezime"
                 name="ime"
                 required
                 value={ime}
@@ -140,9 +167,37 @@ class Form2 extends React.Component {
                 value={imeObjekta}
                 onChange={this.handleChange}
               />
+              <div style={{ display: "flex" }}>
+                <input
+                  type="text"
+                  placeholder="Mjesto"
+                  name="mjesto"
+                  required
+                  value={mjesto}
+                  onChange={this.handleChange}
+                  style={{ margin: "0 5px 0 5px" }}
+                />
+                <input
+                  type="number"
+                  placeholder="Broj jedinica"
+                  name="brojJedinica"
+                  required
+                  value={brojSoba}
+                  onChange={this.handleChange}
+                  style={{ margin: "0 5px 15px 5px" }}
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Koji hotelski sustav koristite?"
+                name="sustav"
+                required
+                value={sustav}
+                onChange={this.handleChange}
+              />
               <input
                 type="tel"
-                placeholder="Broj telefona"
+                placeholder="Kontakt broj"
                 name="brojTelefona"
                 required
                 value={brojTelefona}
@@ -168,6 +223,22 @@ class Form2 extends React.Component {
             </form>
           </FieldsWrap>
         </FormWrap>
+        {this.state.showModal ? (
+          <FormOverlay>
+            <div>Hvala Vam na prijavi!</div>
+            <div
+              style={{ marginTop: "50px" }}
+              className={`modalForm  ${
+                this.state.thanks ? "showModal" : "hideModal"
+              }`}
+            >
+              <img src={logo} alt="logos" width="300px" />
+            </div>
+          </FormOverlay>
+        ) : (
+          <div></div>
+        )}
+
         <FormBehind />
       </>
     )
