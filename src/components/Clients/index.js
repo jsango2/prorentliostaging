@@ -47,7 +47,7 @@ const Clients = () => {
     <WrapClientsSection>
       <Title>Što naši klijenti kažu o nama?</Title>
       <Cards className="kartica">
-        {size.width < 460 ? (
+        {size.width < 1260 ? (
           <>
             <Slider {...settings}>
               <Card

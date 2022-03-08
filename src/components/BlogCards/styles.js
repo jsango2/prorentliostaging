@@ -25,7 +25,7 @@ export const WrapBlogCardsSection = styled.div`
   & .slick-dots li.slick-active button:before {
     color: #1d9ed9;
   }
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     width: 100vw;
     padding: 50px 0px 120px 0px;
     height: 550px;
@@ -58,6 +58,18 @@ export const WrapBlogCard = styled.a`
 
   &:hover .image {
     transform: scale(1.051);
+  }
+  @media screen and (max-width: 1260px) {
+    &:nth-child(1) {
+      margin-right: auto;
+    }
+    &:nth-child(2) {
+      margin: auto;
+    }
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+    margin: 0 auto;
   }
   @media screen and (max-width: 490px) {
     justify-content: flex-start;

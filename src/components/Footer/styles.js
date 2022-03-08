@@ -13,7 +13,7 @@ export const WrapFooterSection = styled.div`
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     width: 100vw;
 
     padding-top: 150px;
@@ -27,7 +27,7 @@ export const FirstRow = styled.div`
   height: 30px;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ export const Logos = styled.div`
   justify-content: space-between;
   margin-top: 150px;
   align-items: center;
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     margin-top: 50px;
 
     height: auto;
@@ -56,7 +56,7 @@ export const Wrap = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,7 @@ export const WrapSocial = styled.div`
     transform: scale(1.1);
     bottom: 2px;
   }
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     margin-top: 50px;
   }
 `
@@ -101,7 +101,7 @@ export const Text = styled.a`
     color: #124572;
     transform: scale(1.05);
   }
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1260px) {
     margin-bottom: 30px;
   }
 `

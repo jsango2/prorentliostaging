@@ -5,7 +5,7 @@ export const TableSectionWrap = styled.div`
   z-index: 1;
   top: -50px;
   width: 100%;
-  height: 1500px;
+  height: auto;
   /* background: linear-gradient(180deg, #ececec 0%, #ffffff 100%); */
   padding-top: 258px;
   padding-left: 130px;

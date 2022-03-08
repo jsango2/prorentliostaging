@@ -9,7 +9,7 @@ export const WrapFormBottom = styled.div`
 
   display: flex;
   overflow: hidden;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 860px) {
     width: 100vw;
     height: auto;
     flex-direction: column;
@@ -22,7 +22,7 @@ export const TextBox = styled.div`
   width: 50%;
   height: 100%;
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 860px) {
     padding: 80px 30px;
 
     width: 100%;
@@ -39,7 +39,7 @@ export const FormBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 860px) {
     width: 100%;
     height: 625px;
   }

@@ -13,6 +13,7 @@ import {
 import Lottie from "lottie-react"
 // import gradientAnimation from "../testimonial/animation"
 import { ParallaxProvider, useParallax, Parallax } from "react-scroll-parallax"
+import Form2 from "../Form/form2.js"
 
 const Hero = () => {
   return (
@@ -38,7 +39,7 @@ const Hero = () => {
         </HeroParagraph>
       </div>
 
-      <Form />
+      <Form2 />
     </HeroWrap>
   )
 }

@@ -37,7 +37,7 @@ export const Cards = styled.div`
   & .slick-dots li.slick-active button:before {
     color: #1d9ed9;
   }
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 1260px) {
     margin: 80px auto 0 auto;
 
     flex-direction: column;
@@ -113,6 +113,7 @@ export const CardWrap = styled.div`
   width: 360px;
   height: 502px;
   cursor: pointer;
+  margin: 0 auto;
   @media screen and (max-width: 490px) {
     width: 95%;
 

@@ -210,6 +210,28 @@ export const FieldsWrap = styled.div`
     cursor: pointer;
     color: #ffffff;
   }
+  & button {
+    width: 100%;
+    height: 80px;
+    padding-left: 0;
+    background: linear-gradient(180deg, #ff4000 0%, #be3202 100%);
+    /* Blue */
+
+    border: 1px solid #0d3151;
+    box-sizing: border-box;
+    /* Blue shadow */
+
+    box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
+    border-radius: 16px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    color: #ffffff;
+  }
   @media screen and (max-width: 1150px) {
     margin: 0 30px 40px 20px;
     width: 90%;

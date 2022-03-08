@@ -40,7 +40,7 @@ const BlogCards = () => {
   }
   return (
     <WrapBlogCardsSection>
-      {size.width < 490 ? (
+      {size.width < 1260 ? (
         <>
           {" "}
           <Slider {...settings}>

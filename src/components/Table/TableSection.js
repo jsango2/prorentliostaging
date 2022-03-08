@@ -37,7 +37,7 @@ const TableSection = () => {
   console.log(size)
   return (
     <>
-      {size.width > 768 ? (
+      {size.width > 1208 ? (
         <TableSectionWrap>
           <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
           <Table>

@@ -16,17 +16,20 @@ export const FourFactsWrap = styled.div`
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
   overflow: hidden;
-  @media screen and (max-width: 490px) {
+  @media screen and (max-width: 1090px) {
     width: 100vw;
 
     padding-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     padding-left: 20px;
     padding-right: 20px;
 
     height: auto;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  @media screen and (max-width: 490px) {
+    padding-bottom: 50px;
   }
 `
 export const Box = styled.div`
@@ -40,7 +43,7 @@ export const Box = styled.div`
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 1030px) {
     width: 100%;
     height: auto;
     flex-direction: column;
