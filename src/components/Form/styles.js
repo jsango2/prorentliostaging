@@ -220,7 +220,7 @@ export const FieldsWrap = styled.div`
     border: 1px solid #0d3151;
     box-sizing: border-box;
     /* Blue shadow */
-
+    margin-top: 86px;
     box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
     border-radius: 16px;
     font-family: "Roboto", sans-serif;

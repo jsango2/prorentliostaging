@@ -22,7 +22,7 @@ class Form2 extends React.Component {
       email: "",
       brojTelefona: "",
       imeObjekta: "",
-      recieveNewsletter: true,
+      // recieveNewsletter: true,
     }
   }
 
@@ -42,8 +42,7 @@ class Form2 extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
   render() {
-    const { ime, email, brojTelefona, imeObjekta, recieveNewsletter } =
-      this.state
+    const { ime, email, brojTelefona, imeObjekta } = this.state
     return (
       <>
         {/* <FormWrap>
@@ -114,7 +113,7 @@ class Form2 extends React.Component {
               <input type="email" name="email" />
               <input type="text" name="imeObjekta" />
               <input type="tel" name="brojTelefona" />
-              <input type="checkbox" name="recieveNewsletter" />
+              {/* <input type="checkbox" name="recieveNewsletter" /> */}
             </form>
             <form onSubmit={this.handleSubmit}>
               <input
@@ -149,7 +148,7 @@ class Form2 extends React.Component {
                 value={brojTelefona}
                 onChange={this.handleChange}
               />{" "}
-              <label className="container">
+              {/* <label className="container">
                 Želim primati Rentlio newsletter za hotele
                 <input
                   type="checkbox"
@@ -159,7 +158,7 @@ class Form2 extends React.Component {
                   onChange={this.handleChange}
                 />
                 <span className="checkmark"></span>
-              </label>
+              </label> */}
               <button type="submit">KONTAKTIRAJ ME </button>
               {/* <input
               className="submitButton"
