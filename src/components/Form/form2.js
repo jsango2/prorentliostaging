@@ -98,18 +98,24 @@ class Form2 extends React.Component {
       
       </FormWrap> */}
         <FormWrap>
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="ime" />
-            <input type="email" name="email" />
-            <input type="text" name="imeObjekta" />
-            <input type="tel" name="brojTelefona" />
-            <input type="checkbox" name="recieveNewsletter" />
-          </form>
           <FormTitle>
             Ispuni podatke danas - Udvostruči prihode, iskorisiti prilike.
           </FormTitle>
 
           <FieldsWrap>
+            <form
+              name="contact"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              hidden
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="text" name="ime" />
+              <input type="email" name="email" />
+              <input type="text" name="imeObjekta" />
+              <input type="tel" name="brojTelefona" />
+              <input type="checkbox" name="recieveNewsletter" />
+            </form>
             <form onSubmit={this.handleSubmit}>
               <input
                 type="text"
