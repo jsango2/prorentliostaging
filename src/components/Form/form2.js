@@ -29,15 +29,15 @@ class Form2 extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = e => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...this.state }),
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error))
-    console.log(this.state)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
     e.preventDefault()
+    console.log(...this.state)
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
