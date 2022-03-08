@@ -7,12 +7,12 @@ const Form = ({ title }) => {
     <>
       <FormWrap>
         <FieldsWrap>
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/success"
+          {/* <form
+            // name="contact"
+            // method="post"
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
+            // action="/success"
           >
             <input type="hidden" name="form-name" value="contact" />
             <input
@@ -44,7 +44,7 @@ const Form = ({ title }) => {
               value="KONTAKTIRAJ ME"
               type="submit"
             />
-          </form>
+          </form> */}
         </FieldsWrap>
       </FormWrap>
     </>
