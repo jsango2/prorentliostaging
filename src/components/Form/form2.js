@@ -37,7 +37,7 @@ class Form2 extends React.Component {
       .then(() => alert("Success!"))
       .catch(error => alert(error))
     e.preventDefault()
-    console.log(...this.state)
+    console.log(this.state)
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
@@ -103,7 +103,13 @@ class Form2 extends React.Component {
           </FormTitle>
 
           <FieldsWrap>
-            <form onSubmit={this.handleSubmit}>
+            <form
+              onSubmit={this.handleSubmit}
+              name="contact"
+              netlify
+              netlify-honeypot="bot-field"
+              hidden
+            >
               <input
                 type="text"
                 placeholder="Ime i Prezime"
