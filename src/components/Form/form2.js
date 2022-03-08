@@ -53,7 +53,7 @@ class Form2 extends React.Component {
           imeObjekta: "",
           showModal: false,
           thanks: false,
-          brojSoba: "",
+          brojJedinica: 0,
           mjesto: "",
           sustav: "",
         })
@@ -65,8 +65,15 @@ class Form2 extends React.Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
   render() {
-    const { ime, email, brojTelefona, imeObjekta, brojSoba, mjesto, sustav } =
-      this.state
+    const {
+      ime,
+      email,
+      brojTelefona,
+      imeObjekta,
+      brojJedinica,
+      mjesto,
+      sustav,
+    } = this.state
     return (
       <>
         {/* <FormWrap>
@@ -182,7 +189,7 @@ class Form2 extends React.Component {
                   placeholder="Broj jedinica"
                   name="brojJedinica"
                   required
-                  value={brojSoba}
+                  value={brojJedinica}
                   onChange={this.handleChange}
                   style={{ margin: "0 5px 15px 5px" }}
                 />
