@@ -40,7 +40,6 @@ class Form2 extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     }).then(res => {
-      console.log(res)
       this.setState({ showModal: true })
       setTimeout(() => {
         this.setState({ thanks: true })
@@ -74,59 +73,9 @@ class Form2 extends React.Component {
       mjesto,
       sustav,
     } = this.state
+
     return (
       <>
-        {/* <FormWrap>
-        <FormTitle>
-          Ispuni podatke danas - Udvostruči prihode, iskorisiti prilike.
-        </FormTitle>
-
-        <FieldsWrap>
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            action="/success"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <input
-              type="text"
-              placeholder="Ime i Prezime"
-              name="ime"
-              required
-            />
-            <input type="email" placeholder="Email" name="email" required />
-            <input
-              type="text"
-              placeholder="Ime objekta"
-              name="ime objekta"
-              required
-            />
-            <input
-              type="tel"
-              placeholder="Broj telefona"
-              name="broj telefona"
-              required
-            />{" "}
-            <label className="container">
-              Želim primati Rentlio newsletter za hotele
-              <input
-                type="checkbox"
-                defaultChecked="checked"
-                name="recieveNewsletter"
-              />
-              <span className="checkmark"></span>
-            </label>
-            <input
-              className="submitButton"
-              value="KONTAKTIRAJ ME "
-              type="submit"
-            />
-          </form>
-        </FieldsWrap>
-      
-      </FormWrap> */}
         <FormWrap>
           <FormTitle>
             Ispuni podatke danas - Udvostruči prihode, iskorisiti prilike.
@@ -182,7 +131,7 @@ class Form2 extends React.Component {
                   required
                   value={mjesto}
                   onChange={this.handleChange}
-                  style={{ margin: "0 5px 0 5px" }}
+                  style={{ margin: "0 5px 0 0" }}
                 />
                 <input
                   type="number"
@@ -191,7 +140,7 @@ class Form2 extends React.Component {
                   required
                   value={brojJedinica}
                   onChange={this.handleChange}
-                  style={{ margin: "0 5px 15px 5px" }}
+                  style={{ margin: "0 0 15px 5px" }}
                 />
               </div>
               <input
@@ -203,7 +152,7 @@ class Form2 extends React.Component {
                 onChange={this.handleChange}
               />
               <input
-                type="tel"
+                type="number"
                 placeholder="Kontakt broj"
                 name="brojTelefona"
                 required
@@ -231,7 +180,10 @@ class Form2 extends React.Component {
           </FieldsWrap>
         </FormWrap>
         {this.state.showModal ? (
-          <FormOverlay>
+          <FormOverlay
+            overlayBottom={this.props.overlayBottom}
+            overlayRight={this.props.overlayRight}
+          >
             <div>Hvala Vam na prijavi!</div>
             <div
               style={{ marginTop: "50px" }}
@@ -245,8 +197,7 @@ class Form2 extends React.Component {
         ) : (
           <div></div>
         )}
-
-        <FormBehind />
+        {this.props.bg ? <FormBehind /> : ""}
       </>
     )
   }

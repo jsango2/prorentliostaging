@@ -4,10 +4,6 @@ export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
   height: 585px;
-  /* background: #ffffff; */
-  /* Gray04 */
-  /* top: 510px; */
-  /* right: 130px; */
   box-sizing: border-box;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -15,6 +11,31 @@ export const FormWrap = styled.div`
   margin-top: 30px;
   @media screen and (max-width: 430px) {
     width: 100%;
+  }
+`
+export const FormOverlay = styled.div`
+  position: absolute;
+  width: 440px;
+  height: 646px;
+  right: 105px;
+  bottom: 66px;
+  z-index: 2;
+  background: #ffff;
+  /* box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); */
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0d3151;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 500px) {
   }
 `
 
@@ -165,6 +186,28 @@ export const FieldsWrap = styled.div`
     box-sizing: border-box;
     /* Blue shadow */
 
+    box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
+    border-radius: 16px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    cursor: pointer;
+    color: #ffffff;
+  }
+  & button {
+    width: 100%;
+    height: 80px;
+    padding-left: 0;
+    background: linear-gradient(180deg, #ff4000 0%, #be3202 100%);
+    /* Blue */
+
+    border: 1px solid #0d3151;
+    box-sizing: border-box;
+    /* Blue shadow */
+    margin-top: 20px;
     box-shadow: 0px 4px 10px rgba(0, 133, 255, 0.2);
     border-radius: 16px;
     font-family: "Roboto", sans-serif;

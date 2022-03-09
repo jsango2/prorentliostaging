@@ -39,7 +39,16 @@ const Hero = () => {
         </HeroParagraph>
       </div>
 
-      <Form2 />
+      <Form2
+        top="510px"
+        right="130px"
+        bg={true}
+        bgColor="#ffff"
+        border="1px solid #eaeaea"
+        title={true}
+        overlayBottom="-406px"
+        overlayRight="150px"
+      />
     </HeroWrap>
   )
 }
