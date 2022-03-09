@@ -17,7 +17,7 @@ export const FormOverlay = styled.div`
   position: absolute;
   width: 440px;
   height: 646px;
-  right: 105px;
+  right: 137px;
   bottom: 66px;
   z-index: 2;
   background: #ffff;

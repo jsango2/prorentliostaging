@@ -34,7 +34,7 @@ class Form extends React.Component {
       brojSoba: "",
       mjesto: "",
       sustav: "",
-      showModal: false,
+      showModal: true,
       thanks: false,
     }
   }
@@ -47,7 +47,6 @@ class Form extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     }).then(res => {
-      console.log(res)
       this.setState({ showModal: true })
       setTimeout(() => {
         this.setState({ thanks: true })

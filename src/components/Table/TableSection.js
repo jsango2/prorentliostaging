@@ -34,7 +34,6 @@ import useWindowSize from "../helper/useWindowSize"
 
 const TableSection = () => {
   const size = useWindowSize()
-  console.log(size)
   return (
     <>
       {size.width > 1208 ? (
