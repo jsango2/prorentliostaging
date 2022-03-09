@@ -72,8 +72,20 @@ export const FormOverlay = styled.div`
   align-items: center;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 1150px) {
+    max-width: 480px;
+    width: 95%;
+    top: 732px;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+  @media screen and (max-width: 430px) {
+    height: 661px;
 
-  @media screen and (max-width: 500px) {
+    width: 95%;
+    top: 732px;
+    right: 50%;
+    transform: translate(50%, 0);
   }
 `
 export const WrapPipe = styled.div`

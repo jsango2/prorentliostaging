@@ -16,9 +16,9 @@ export const FormWrap = styled.div`
 export const FormOverlay = styled.div`
   position: absolute;
   width: 440px;
-  height: 646px;
-  right: 137px;
-  bottom: 66px;
+  height: 590px;
+  /* right: 137px;
+  bottom: 66px; */
   z-index: 2;
   background: #ffff;
   /* box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); */
@@ -35,7 +35,11 @@ export const FormOverlay = styled.div`
   flex-direction: column;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 430px) {
+    width: 90%;
+    height: 610px;
+    /* right: 20px;
+    bottom: 7px; */
   }
 `
 

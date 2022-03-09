@@ -90,6 +90,7 @@ class Form2 extends React.Component {
           </FormTitle>
 
           <FieldsWrap>
+            {/* OVAJ FORM JE SAMO ZA NETLIFY BOTOVE DA PREPOZNAJU FORMULAR */}
             <form
               name="contact"
               data-netlify="true"
@@ -106,6 +107,7 @@ class Form2 extends React.Component {
               <input type="number" name="brojJedinica" />
               {/* <input type="checkbox" name="recieveNewsletter" /> */}
             </form>
+            {/* PRAVI FORM */}
             <form onSubmit={this.handleSubmit}>
               <input
                 type="text"
