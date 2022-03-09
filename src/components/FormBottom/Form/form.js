@@ -34,7 +34,7 @@ class Form extends React.Component {
       brojSoba: "",
       mjesto: "",
       sustav: "",
-      showModal: true,
+      showModal: false,
       thanks: false,
     }
   }
