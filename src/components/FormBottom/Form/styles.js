@@ -5,7 +5,7 @@ export const FormWrap = styled.div`
   width: 480px;
   height: 585px;
   box-sizing: border-box;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15); */
   border-radius: 20px;
   z-index: 2;
   margin-top: 30px;

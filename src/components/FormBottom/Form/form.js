@@ -31,7 +31,7 @@ class Form extends React.Component {
       email: "",
       brojTelefona: "",
       imeObjekta: "",
-      brojSoba: "",
+      brojJedinica: "",
       mjesto: "",
       sustav: "",
       showModal: false,
@@ -59,7 +59,7 @@ class Form extends React.Component {
           imeObjekta: "",
           showModal: false,
           thanks: false,
-          brojJedinica: 0,
+          brojJedinica: "",
           mjesto: "",
           sustav: "",
         })
@@ -67,6 +67,15 @@ class Form extends React.Component {
     })
 
     e.preventDefault()
+  }
+  onChange = e => {
+    const re = /^[0-9\b]+$/
+    // this.setState({ brojTelefona: e.target.value })
+    // if value is not blank, then test the regex
+
+    if (e.target.value === "" || re.test(e.target.value)) {
+      this.setState({ brojTelefona: e.target.value })
+    }
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value })
@@ -139,12 +148,12 @@ class Form extends React.Component {
                 onChange={this.handleChange}
               />
               <input
-                type="number"
+                type="text"
                 placeholder="Kontakt broj"
                 name="brojTelefona"
                 required
                 value={brojTelefona}
-                onChange={this.handleChange}
+                onChange={this.onChange}
               />{" "}
               {/* <label className="container">
                 Želim primati Rentlio newsletter za hotele
