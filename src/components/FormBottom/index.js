@@ -13,9 +13,9 @@ import Form from "./Form/form.js"
 import { useInView } from "react-intersection-observer"
 
 const FormBottom = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0.3,
     // trigger inView function only once
     triggerOnce: true,
   })

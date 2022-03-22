@@ -1,12 +1,5 @@
 import React, { useState } from "react"
-import {
-  FormWrap,
-  FormBehind,
-  FormTitle,
-  FieldsWrap,
-  WrapPipe,
-} from "./styles.js"
-import { Helmet } from "react-helmet"
+import { FormWrap, FormBehind, FormTitle, FieldsWrap } from "./styles.js"
 
 const encode = data => {
   return Object.keys(data)
@@ -24,16 +17,7 @@ const Form = ({ title }) => {
     ime: "",
   })
 
-  const handleSubmit = e => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...state }),
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error))
-    // e.preventDefault()
-  }
+  const handleSubmit = e => {}
 
   return (
     <>

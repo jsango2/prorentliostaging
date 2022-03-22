@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useRef } from "react"
 import { useSpring, animated } from "react-spring"
 import {
   CardWrap,
@@ -11,10 +11,10 @@ import {
   CardOverlay,
 } from "./styles.js"
 import stars from "../../../static/images/5stars.svg"
-import useWindowSize from "../helper/useWindowSize"
+// import useWindowSize from "../helper/useWindowSize"
 
 const Card = ({ title, text, avatar, owner, hotel, overlay, onMouseEnter }) => {
-  const size = useWindowSize()
+  // const size = useWindowSize()
   const ref = useRef()
   // Keep track of whether card is hovered so we can increment ...
   // ... zIndex to ensure it shows up above other cards when animation causes overlap.

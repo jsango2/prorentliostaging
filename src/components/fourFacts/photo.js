@@ -3,7 +3,7 @@ import { PhotoComp, PhotoOverlay } from "./styles.js"
 import { useInView } from "react-intersection-observer"
 
 const Photo = ({ image, imageBg, position, imageTop, imageLeft }) => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.5,
     // trigger inView function only once

@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components"
+import styled from "styled-components"
 import bg4 from "../../images/bg4.png"
 
 export const FourFactsWrap = styled.div`

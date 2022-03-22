@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState } from "react"
 import { WrapClientsSection, Title, Cards } from "./styles.js"
 import Murphy from "../../../static/images/murphy.png"
 import Wade from "../../../static/images/Wade.png"

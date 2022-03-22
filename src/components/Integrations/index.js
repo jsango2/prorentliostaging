@@ -12,7 +12,7 @@ import p1 from "../../../static/images/remaris.png"
 import p2 from "../../../static/images/hoteza.png"
 import p3 from "../../../static/images/minimax.png"
 import p4 from "../../../static/images/monri.png"
-import Lottie, { useLottie, useLottieInteractivity } from "lottie-react"
+import Lottie from "lottie-react"
 import gradientAnimation from "../../components/testimonial/animation"
 import { GradientBottomLine } from "../../components/testimonial/styles.js"
 

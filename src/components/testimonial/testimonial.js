@@ -1,10 +1,9 @@
-import React, { ref } from "react"
+import React from "react"
 import {
   TestimonialWrap,
   ContentWrap,
   Stars,
   Title,
-  Paragraph,
   AvatarContent,
   WrapNameCredential,
   GradientBottomLine,
@@ -12,7 +11,7 @@ import {
   Credential,
 } from "./styles.js"
 import Guy from "../../images/fotoGuy.png"
-import Lottie, { useLottie, useLottieInteractivity } from "lottie-react"
+import Lottie, { useLottie } from "lottie-react"
 import animationStars from "./animationStars"
 import { useInView } from "react-intersection-observer"
 import gradientAnimation from "./animation"
@@ -34,7 +33,7 @@ const Example = () => {
 }
 
 const Testimonial = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.6,
     // trigger inView function only once

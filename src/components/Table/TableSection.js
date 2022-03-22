@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React from "react"
 import {
   TableSectionWrap,
   Intro,
@@ -9,7 +9,6 @@ import {
   LogoHero,
   SingleDataRentlio,
   RentlioBox,
-  RentlioBoxBack,
   TradicionalanSustav,
   TraditionalData,
   WrapTable,
@@ -28,8 +27,7 @@ import {
   WrapTraditionalBox,
 } from "./styles.js"
 import { tableData } from "./tableData.js"
-import No from "../../../static/images/x.svg"
-import Yes from "../../../static/images/yes.svg"
+
 import useWindowSize from "../helper/useWindowSize"
 
 const TableSection = () => {

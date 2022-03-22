@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 // import {
 //   FormWrap,
 //   FormBehind,
@@ -7,14 +7,7 @@ import React, { useState } from "react"
 //   WrapPipe,
 //   FormOverlay,
 // } from "./styles.js"
-import {
-  FormWrap,
-  FormTitle,
-  FormOverlay,
-  FormBehind,
-  FieldsWrap,
-} from "./styles.js"
-import { Helmet } from "react-helmet"
+import { FormWrap, FormOverlay, FieldsWrap } from "./styles.js"
 import logo from "../../../../static/images/RentlioLogoTamni.svg"
 
 const encode = data => {

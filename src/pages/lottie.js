@@ -1,31 +1,28 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useRef } from "react"
 import lottie from "lottie-web"
 import animationData from "../components/lottieTest/rimac2.json"
-import { useSpring, animated, to } from "@react-spring/web"
+import { animated } from "@react-spring/web"
 import { useGesture } from "@use-gesture/react"
 
 const LottieControl = () => {
   console.log(animationData)
-  const [pinc, setPinc] = useState(1)
-  const [newdata, setNewData] = useState()
+  // const [pinc, setPinc] = useState(1)
+  // const [newdata, setNewData] = useState()
   const target = useRef(null)
   const lottieRef = React.useRef(null)
-  const myRef = React.useRef(null)
-  const [{ d, a }, api] = useSpring(() => ({
-    config: { mass: 1115, tension: 11, friction: 1 },
-  }))
+  // const myRef = React.useRef(null)
+  // const [] = useSpring(() => ({
+  //   config: { mass: 1115, tension: 11, friction: 1 },
+  // }))
   let length = 0
   useGesture(
     {
       onPinch: ({
-        da,
         origin: [ox, oy],
-        first,
-        initial,
+
         movement: [ms],
         offset: [s, a],
-        lastOffset,
-        memo,
+
         distance: [dr],
         delta,
       }) => {

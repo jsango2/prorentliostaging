@@ -1,5 +1,4 @@
 import React from "react"
-import Form from "../Form/form.js"
 
 import {
   HeroWrap,
@@ -8,11 +7,7 @@ import {
   HeroTitle,
   HeroParagraph,
   HeroParagraph2,
-  // GradientBottomLine,
 } from "./styles.js"
-import Lottie from "lottie-react"
-// import gradientAnimation from "../testimonial/animation"
-import { ParallaxProvider, useParallax, Parallax } from "react-scroll-parallax"
 import Form2 from "../Form/form2.js"
 
 const Hero = () => {
