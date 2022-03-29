@@ -1,11 +1,35 @@
 import React from "react"
-import { UserLogosWrap } from "./styles.js"
-import Users from "../../../static/images/users.png"
+import {
+  UserLogosWrap,
+  SanRocco,
+  Martinis,
+  Bevanda,
+  Prijeko,
+  Verdi,
+  Cittar,
+  Palace,
+  Republika,
+  Scalini,
+  Puntjar,
+  Jarun,
+  Vista,
+} from "./styles.js"
 
 const UserLogos = () => {
   return (
     <UserLogosWrap>
-      <img src={Users} alt="users" width="80%" />
+      <SanRocco />
+      <Martinis />
+      <Bevanda />
+      <Prijeko />
+      <Verdi />
+      <Cittar />
+      <Palace />
+      <Republika />
+      <Scalini />
+      <Puntjar />
+      <Jarun />
+      <Vista />
     </UserLogosWrap>
   )
 }

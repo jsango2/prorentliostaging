@@ -37,6 +37,21 @@ export const Intro = styled.div`
 
   color: #0d3151;
   margin: 0 auto;
+  .buducnost {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    /* or 125% */
+
+    text-align: center;
+    text-decoration-line: line-through;
+  }
+  @media screen and (max-width: 1100px) {
+    text-align: center;
+    width: 80%;
+  }
   @media screen and (max-width: 768px) {
     font-size: 30px;
     line-height: 40px;

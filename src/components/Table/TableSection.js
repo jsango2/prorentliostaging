@@ -36,7 +36,9 @@ const TableSection = () => {
     <>
       {size.width > 1208 ? (
         <TableSectionWrap>
-          <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
+          <Intro>
+            Cloud je <span className="buducnost">budućnost</span> sadašnjost
+          </Intro>
           <Table>
             <TradicionalanSustav>Tradicionalan sustav</TradicionalanSustav>
 

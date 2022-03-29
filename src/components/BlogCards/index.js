@@ -48,20 +48,20 @@ const BlogCards = () => {
               photo={p1}
               photoUrl="http://cms.rentl.io/wp-content/uploads/2021/02/annie-spratt-qyAka7W5uMY-unsplash.jpg"
               title="Samo je jedan trend u turizmu – digitalna transformacija"
-              link="https://www.rentl.io/1"
+              link="https://rentl.io/blog/samo-je-jedan-trend-u-turizmu-digitalna-transformacija"
             />
             <BlogCard
               photo={p2}
               photoUrl="http://cms.rentl.io/wp-content/uploads/2021/02/fran-hogan-VPci0fN-7t4-unsplash.jpg"
               title="Kada je pravo vrijeme za promjenu PMS-a i channel managera?"
-              link="https://www.rentl.io/2"
+              link="https://rentl.io/blog/kada-je-pravo-vrijeme-za-promjenu-pms-a-i-channel-managera"
             />
 
             <BlogCard
               photo={p3}
               photoUrl="http://cms.rentl.io/wp-content/uploads/2021/07/christopher-gower-m_HRfLhgABo-unsplash-2.jpg"
               title="Važnost dvosmjerne veze PMS sustava"
-              link="https://www.rentl.io/3"
+              link="https://rentl.io/blog/vaznost-dvosmjerne-veze-pms-sustava"
             />
           </Slider>
         </>
@@ -71,17 +71,17 @@ const BlogCards = () => {
           <BlogCard
             photo={p1}
             title="Samo je jedan trend u turizmu – digitalna transformacija"
-            link="https://www.rentl.io/1"
+            link="https://rentl.io/blog/samo-je-jedan-trend-u-turizmu-digitalna-transformacija"
           />
           <BlogCard
             photo={p2}
             title="Kada je pravo vrijeme za promjenu PMS-a i channel managera?"
-            link="https://www.rentl.io/2"
+            link="https://rentl.io/blog/kada-je-pravo-vrijeme-za-promjenu-pms-a-i-channel-managera"
           />
           <BlogCard
             photo={p3}
             title="Važnost dvosmjerne veze PMS sustava"
-            link="https://www.rentl.io/3"
+            link="https://rentl.io/blog/vaznost-dvosmjerne-veze-pms-sustava"
           />
         </>
       )}
