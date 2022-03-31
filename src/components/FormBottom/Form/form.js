@@ -35,12 +35,21 @@ class Form extends React.Component {
   /* Here’s the juicy bit for posting the form submission */
 
   handleSubmit = e => {
+    // window.dataLayer.push({
+    //   event: "PRO form top submitted",
+    //   // custom event params
+    // })
+    // dataLayer.push({ event: "PRO form bottom submitted" })
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     }).then(res => {
       this.setState({ showModal: true })
+      window.dataLayer.push({
+        event: "PRO form bottom submitted",
+        // custom event params
+      })
       setTimeout(() => {
         this.setState({ thanks: true })
       }, 500)
