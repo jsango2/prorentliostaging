@@ -12,10 +12,9 @@ import Integrations from "../components/Integrations"
 import FormBottom from "../components/FormBottom"
 import BlogCards from "../components/BlogCards"
 import Footer from "../components/Footer"
-
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-
+  console.log("env", process.env.GOOGLE_TAGMANAGER_ID)
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="Rentlio Hoteli" />

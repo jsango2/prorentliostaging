@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { WrapClientsSection, Title, Cards } from "./styles.js"
-import Murphy from "../../../static/images/murphy.png"
-import Wade from "../../../static/images/Wade.png"
-import Wilson from "../../../static/images/Wilson.png"
+import Kosir from "../../../static/images/fotoGuy.png"
+import Zovko from "../../../static/images/Zovko.png"
+import Auero from "../../../static/images/Auero.png"
+
 import Card from "./Card.js"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -51,25 +52,25 @@ const Clients = () => {
           <>
             <Slider {...settings}>
               <Card
-                title="Excellent experience using Rentlio for our hotel."
-                text="They have amazing support, always ready to help. Product is very intuitive and well structured. Rentlio allowed us to make everything automatic"
-                avatar={Murphy}
-                owner="Kathryn Murphy"
-                hotel="Hotel San Rocco"
+                title="Mi smo u hotelu promijenili tri ili četiri rezervacijska sustava."
+                text="Rentlio cloud rješenje napravilo je ne samo dodatne prednosti kroz to da ne moramo toliko vremena trošiti po rezervaciji, do toga gdje mi ne trošimo previše resursa za edukaciju novih zaposlenika."
+                avatar={Kosir}
+                owner="Jozo Kosir"
+                hotel="Hotel Jarun"
               />
               <Card
-                title="Using Rentlio helped me increase my business!"
-                text="The software has given me more free time as it does everything for you. I used to do everything by hand and print out tons of paper, now it is all on the software."
-                avatar={Wade}
-                owner="Wade Warren"
-                hotel="Hotel Bevanda"
+                title="Mi kao lideri smo odlučili koristiti hrvatskog lidera."
+                text="Od samog početka poslovanja smo sve bazirali online i digitalno, te od starta pratimo Rentlio. Zadnjih deset godina smo koristili svjetske providere što PMS-a što channel manager-a i odlučili smo se za hrvatskog lidera."
+                avatar={Zovko}
+                owner="Tomislav Zovko"
+                hotel="Irundo"
               />
               <Card
-                title="Super friendly and easy to use system, a lifesaver!"
-                text="I cannot imagine doing it on my own. Being very satisfied with Rentlio we didn't look for any other provider. Customer support is super fast, very friendly."
-                avatar={Wilson}
-                owner="Jenny Wilson"
-                hotel="Hotel Peteani"
+                title="Praktičnost, intuitivnost, podrška, preglednost."
+                text="Live chat u praksi funkcionira odlično te se kvalitetan savjet i rješenje dobije u realnom vremenu. Produktivnost se povećala zbog uštede vremena pri korištenju Rentlija - automatski unos podataka o gostu je izvanredan primjer."
+                avatar={Auero}
+                owner="Kristian Auero"
+                hotel="Vila Nepos Hotel"
               />
             </Slider>
           </>
@@ -77,32 +78,32 @@ const Clients = () => {
           <>
             {" "}
             <Card
-              title="Excellent experience using Rentlio for our hotel."
-              text="They have amazing support, always ready to help. Product is very intuitive and well structured. Rentlio allowed us to make everything automatic"
-              avatar={Murphy}
-              owner="Kathryn Murphy"
-              hotel="Hotel San Rocco"
+              title="Mi smo u hotelu promijenili tri ili četiri rezervacijska sustava."
+              text="Rentlio cloud rješenje napravilo je ne samo dodatne prednosti kroz to da ne moramo toliko vremena trošiti po rezervaciji, do toga gdje mi ne trošimo previše resursa za edukaciju novih zaposlenika."
+              avatar={Kosir}
+              owner="Jozo Kosir"
+              hotel="Hotel Jarun"
               overlay={current === 0 ? true : false}
               // overlay={false}
               // onClick={e => handleClick(e, 0)}
               onMouseEnter={e => handleClick(e, 0)}
             />
             <Card
-              title="Using Rentlio helped me increase my business!"
-              text="The software has given me more free time as it does everything for you. I used to do everything by hand and print out tons of paper, now it is all on the software."
-              avatar={Wade}
-              owner="Wade Warren"
-              hotel="Hotel Bevanda"
+              title="Mi kao lideri smo odlučili koristiti hrvatskog lidera."
+              text="Od samog početka poslovanja smo sve bazirali online i digitalno, te od starta pratimo Rentlio. Zadnjih deset godina smo koristili svjetske providere što PMS-a što channel manager-a i odlučili smo se za hrvatskog lidera."
+              avatar={Zovko}
+              owner="Tomislav Zovko"
+              hotel="Irundo"
               // overlay={true}
               overlay={current === 1 ? true : false}
               onMouseEnter={e => handleClick(e, 1)}
             />
             <Card
-              title="Super friendly and easy to use system, a lifesaver!"
-              text="I cannot imagine doing it on my own. Being very satisfied with Rentlio we didn't look for any other provider. Customer support is super fast, very friendly."
-              avatar={Wilson}
-              owner="Jenny Wilson"
-              hotel="Hotel Peteani"
+              title="Praktičnost, intuitivnost, podrška, preglednost."
+              text="Live chat u praksi funkcionira odlično te se kvalitetan savjet i rješenje dobije u realnom vremenu. Produktivnost se povećala zbog uštede vremena pri korištenju Rentlija - automatski unos podataka o gostu je izvanredan primjer."
+              avatar={Auero}
+              owner="Kristian Auero"
+              hotel="Vila Nepos Hotel"
               // overlay={false}
               overlay={current === 2 ? true : false}
               onMouseEnter={e => handleClick(e, 2)}

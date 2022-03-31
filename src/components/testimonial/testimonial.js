@@ -10,7 +10,7 @@ import {
   Name,
   Credential,
 } from "./styles.js"
-import Guy from "../../images/fotoGuy.png"
+import Guy from "../../../static/images/fotoGuy.png"
 import Lottie, { useLottie } from "lottie-react"
 import animationStars from "./animationStars"
 import { useInView } from "react-intersection-observer"
@@ -45,8 +45,8 @@ const Testimonial = () => {
       <ContentWrap ref={ref}>
         <Stars>{inView && <Example />}</Stars>
         <Title>
-          “Prelazak s postojećeg sustava na Rentlio bio je kao prelazak s Nokie
-          3310 na iPhone 13 PRO.”
+          “Mi smo u hotelu promijenili tri ili četiri rezervacijska sustava.
+          Rentlio je zamijenio sve njih.”
         </Title>
         {/* <Paragraph>
           They have amazing support, always ready to help. Product is very
@@ -56,8 +56,8 @@ const Testimonial = () => {
         <AvatarContent>
           <img src={Guy} alt="Guy" width="80" height="80" />
           <WrapNameCredential>
-            <Name>Tomislav Buljubašić</Name>
-            <Credential>Hotel manager, Valamar Isabella Miramare</Credential>
+            <Name>Jozo Kosir</Name>
+            <Credential>CEO, Hotel Jarun</Credential>
           </WrapNameCredential>
         </AvatarContent>
       </ContentWrap>
