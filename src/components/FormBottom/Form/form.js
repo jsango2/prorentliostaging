@@ -27,8 +27,8 @@ class Form extends React.Component {
       brojJedinica: "",
       mjesto: "",
       sustav: "",
-      showModal: false,
-      thanks: false,
+      showModal: true,
+      thanks: true,
     }
   }
 
@@ -179,7 +179,21 @@ class Form extends React.Component {
         </FormWrap>
         {this.state.showModal ? (
           <FormOverlay>
-            <div>Hvala Vam na prijavi!</div>
+            <div>
+              {this.state.ime.split(" ")[0]}, odbrojavanje za Rentlio Pro je
+              počelo i, prije svega, želimo se uvjeriti kako smo predvidjeli
+              svaku vašu, pa i najmanju potrebu. Vaše nam je mišljenje važno.
+              Jedan od naših hotel tech stručnjaka kontaktirat će Vas unutar 24
+              sata kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
+              hotelskog sustava. Za sva dodatna pitanja dostupni smo putem
+              e-maila, na{" "}
+              <a
+                style={{ textDecoration: "none" }}
+                href="mailto:hello@rentl.io"
+              >
+                hello@rentl.io
+              </a>
+            </div>
             <div
               style={{ marginTop: "50px" }}
               className={`modalForm  ${

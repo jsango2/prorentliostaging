@@ -60,7 +60,7 @@ class Form2 extends React.Component {
           mjesto: "",
           sustav: "",
         })
-      }, 5000)
+      }, 8000)
     })
 
     e.preventDefault()
@@ -199,7 +199,7 @@ class Form2 extends React.Component {
             overlayRight={this.props.overlayRight}
           >
             <div>
-              {this.state.ime.split(" ")[1]}, odbrojavanje za Rentlio Pro je
+              {this.state.ime.split(" ")[0]}, odbrojavanje za Rentlio Pro je
               počelo i, prije svega, želimo se uvjeriti kako smo predvidjeli
               svaku vašu, pa i najmanju potrebu. Vaše nam je mišljenje važno.
               Jedan od naših hotel tech stručnjaka kontaktirat će Vas unutar 24
