@@ -67,6 +67,8 @@ export const FormOverlay = styled.div`
   line-height: 30px;
   color: #0d3151;
   padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   justify-content: center;
   align-items: center;

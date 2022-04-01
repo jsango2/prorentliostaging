@@ -27,6 +27,7 @@ class Form2 extends React.Component {
       sustav: "",
       showModal: false,
       thanks: false,
+      firstName: "",
     }
   }
 
@@ -84,13 +85,6 @@ class Form2 extends React.Component {
       mjesto,
       sustav,
     } = this.state
-
-    // const handleButtonClick = () => {
-    //   window.dataLayer.push({
-    //     event: "PRO form top submitted",
-    //     // custom event params
-    //   })
-    // }
 
     return (
       <>
@@ -204,7 +198,21 @@ class Form2 extends React.Component {
             overlayBottom={this.props.overlayBottom}
             overlayRight={this.props.overlayRight}
           >
-            <div>Hvala Vam na prijavi!</div>
+            <div>
+              {this.state.ime.split(" ")[1]}, odbrojavanje za Rentlio Pro je
+              počelo i, prije svega, želimo se uvjeriti kako smo predvidjeli
+              svaku vašu, pa i najmanju potrebu. Vaše nam je mišljenje važno.
+              Jedan od naših hotel tech stručnjaka kontaktirat će Vas unutar 24
+              sata kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
+              hotelskog sustava. Za sva dodatna pitanja dostupni smo putem
+              e-maila, na{" "}
+              <a
+                style={{ textDecoration: "none" }}
+                href="mailto:hello@rentl.io"
+              >
+                hello@rentl.io
+              </a>
+            </div>
             <div
               style={{ marginTop: "50px" }}
               className={`modalForm  ${
