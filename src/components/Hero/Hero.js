@@ -26,10 +26,10 @@ const Hero = () => {
         <HeroParagraph>
           Rezervacije nema u sustavu. Ekran se smrznuo. Korisnička podrška
           nedostupna. Spor check-in. Ručno upisivanje - pa prepisivanje. Red
-          ispred recepcije raste. Gosti sve nervozniji.
+          ispred recepcije raste. Gosti sve nervozniji. Opet propuštena prilika
+          zbog zastarjelog hotelskog sustava.
           <HeroParagraph2>
-            <strong>Opet</strong> propuštena prilika zbog zastarjelog hotelskog
-            sustava.
+            <strong>Odbrojavanje za Rentlio Pro je počelo.</strong>
           </HeroParagraph2>
         </HeroParagraph>
       </div>

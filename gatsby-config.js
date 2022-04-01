@@ -8,7 +8,7 @@ module.exports = {
       name: `Rentlio`,
       summary: `Rentlio Hotel Landing Page`,
     },
-    description: `Rentlio Hotel Landing Page`,
+    description: `Gomilate propuštene prilike zbog zastarjelog hotelskog sustava? Kako uštedjeti, poboljšati učinkovitost i povećati prihode - budite među prvima koji će saznati što Rentlio sprema!`,
     siteUrl: `https://localhost:8003/`,
     image: `/facts1.png`,
     social: {
@@ -134,7 +134,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Rentlio Hoteli Landing Page`,
-        short_name: `Rentlio Hoteli`,
+        short_name: `Prijavi se I Otkrij što Rentlio priprema. Otkrij Rentlio Pro.`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

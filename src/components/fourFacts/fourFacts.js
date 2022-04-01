@@ -44,8 +44,8 @@ const FourFacts = () => {
         titleUp="Profitabilno"
         slide="25% viši prihodi"
         title="Propuštate prihode?"
-        textUp="Hotelski sustav funkcionira kao da su još devedesete, samo zbrajate propuštene šanse za više prihode?  "
-        textDown="Samo centralizacijom upita, uz moderni Rentlio Booking Engine, prihodi će porasti za 25%."
+        textUp="Vaš hotelski sustav funkcionira kao da su još devedesete, samo zbrajate propuštene šanse za više prihode?"
+        textDown="Samo centralizacijom upita i uz moderni Rentlio Booking Engine, vaši prihodi će porasti za 25%."
         imageBg={p3bg}
         position="70% 50%"
       />
