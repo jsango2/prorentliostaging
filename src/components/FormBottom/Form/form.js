@@ -27,8 +27,8 @@ class Form extends React.Component {
       brojJedinica: "",
       mjesto: "",
       sustav: "",
-      showModal: true,
-      thanks: true,
+      showModal: false,
+      thanks: false,
     }
   }
 
