@@ -23,7 +23,7 @@ export const FormWrap = styled.div`
   }
   @media screen and (max-width: 430px) {
     width: 95%;
-    top: 732px;
+    top: 756px;
     right: 50%;
     transform: translate(50%, 0);
   }
@@ -34,7 +34,7 @@ export const FormBehind = styled.div`
   width: 440px;
   height: 370px;
   right: 155px;
-  bottom: -114px;
+  bottom: -90px;
   z-index: 1;
   /* Gray04 */
 
@@ -43,7 +43,7 @@ export const FormBehind = styled.div`
   border-radius: 20px;
 
   @media screen and (max-width: 1150px) {
-    top: 723px;
+    top: 748px;
     right: 50%;
     transform: translate(50%, 0);
   }

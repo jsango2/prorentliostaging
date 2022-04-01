@@ -69,7 +69,7 @@ const Clients = () => {
                 title="Praktičnost, intuitivnost, podrška, preglednost."
                 text="Live chat u praksi funkcionira odlično te se kvalitetan savjet i rješenje dobije u realnom vremenu. Produktivnost se povećala zbog uštede vremena pri korištenju Rentlija - automatski unos podataka o gostu je izvanredan primjer."
                 avatar={Auero}
-                owner="Kristian Auero"
+                owner="Kristian Auer"
                 hotel="Vila Nepos Hotel"
               />
             </Slider>

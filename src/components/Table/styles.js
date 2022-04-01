@@ -59,6 +59,9 @@ export const Intro = styled.div`
 
     text-align: center;
     width: 80%;
+    .buducnost {
+      font-size: 30px;
+    }
   }
 `
 export const Table = styled.div`

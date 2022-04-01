@@ -23,7 +23,7 @@ export const Cards = styled.div`
   margin: 150px auto 0 auto;
   & .slick-dots {
     position: absolute;
-    bottom: 39px;
+    bottom: 15px;
     display: block;
     width: 100%;
     padding: 0;

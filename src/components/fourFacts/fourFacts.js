@@ -16,7 +16,7 @@ const FourFacts = () => {
         key={1}
         titleUp="Efikasno"
         slide="80% manje administracije"
-        title="Koristite više sustava - umjesto jednog??"
+        title="Koristite više sustava - umjesto jednog?"
         textUp="Rezervacija nije vidljiva i izmjene nisu evidentirane? Česti overbooking? Gost je stigao, ali rezervacija nije?"
         textDown="Rentlio je cjelovito PMS, channel manager i booking engine cloud rješenje koje ne trpi navedene probleme."
         image={p1}

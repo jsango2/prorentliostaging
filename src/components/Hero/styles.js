@@ -4,7 +4,7 @@ import bg from "../../../static/images/HeroPhoto2.png"
 export const HeroWrap = styled.div`
   position: relative;
   width: 100%;
-  height: 760px;
+  height: 783px;
   background-image: url(${bg});
   background-position: center;
   background-size: cover;

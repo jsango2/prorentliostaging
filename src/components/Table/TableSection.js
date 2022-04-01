@@ -70,7 +70,9 @@ const TableSection = () => {
         </TableSectionWrap>
       ) : (
         <TableSectionWrap>
-          <Intro>Zašto reći da cloudu, a ne tradicionalnom sustavu?</Intro>
+          <Intro>
+            Cloud je <span className="buducnost">budućnost</span> sadašnjost
+          </Intro>
 
           <TableMobWrap>
             <LeftMob>
