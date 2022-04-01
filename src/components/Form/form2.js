@@ -25,8 +25,8 @@ class Form2 extends React.Component {
       brojJedinica: "",
       mjesto: "",
       sustav: "",
-      showModal: false,
-      thanks: false,
+      showModal: true,
+      thanks: true,
       firstName: "",
     }
   }
@@ -201,17 +201,10 @@ class Form2 extends React.Component {
             <div>
               {this.state.ime.split(" ")[0]}, odbrojavanje za Rentlio Pro je
               počelo i, prije svega, želimo se uvjeriti kako smo predvidjeli
-              svaku vašu, pa i najmanju potrebu. Vaše nam je mišljenje važno.
-              Jedan od naših hotel tech stručnjaka kontaktirat će Vas unutar 24
-              sata kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
-              hotelskog sustava. Za sva dodatna pitanja dostupni smo putem
-              e-maila, na{" "}
-              <a
-                style={{ textDecoration: "none" }}
-                href="mailto:hello@rentl.io"
-              >
-                hello@rentl.io
-              </a>
+              svaku vašu, pa i najmanju potrebu.
+              <br /> Naš hotel tech stručnjak će Vas kontaktirati unutar 24 sata
+              kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
+              hotelskog sustava.
             </div>
             <div
               style={{ marginTop: "50px" }}
