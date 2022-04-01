@@ -183,8 +183,8 @@ class Form extends React.Component {
               {this.state.ime.split(" ")[0]}, odbrojavanje za Rentlio Pro je
               počelo i, prije svega, želimo se uvjeriti kako smo predvidjeli
               svaku vašu, pa i najmanju potrebu.
-              <br /> Naš hotel tech stručnjak će Vas kontaktirati unutar 24 sata
-              kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
+              <br /> Naš hotelski tech stručnjak će Vas kontaktirati unutar 24
+              sata kako bismo Vam približili pogodnosti očekivanog Rentlio Pro
               hotelskog sustava.
             </div>
             <div
