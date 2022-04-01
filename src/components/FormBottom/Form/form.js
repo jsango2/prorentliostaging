@@ -65,7 +65,7 @@ class Form extends React.Component {
           mjesto: "",
           sustav: "",
         })
-      }, 5000)
+      }, 10000)
     })
 
     e.preventDefault()
