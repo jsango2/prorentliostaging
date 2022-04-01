@@ -10,7 +10,7 @@ module.exports = {
     },
     description: `Gomilate propuštene prilike zbog zastarjelog hotelskog sustava? Kako uštedjeti, poboljšati učinkovitost i povećati prihode - budite među prvima koji će saznati što Rentlio sprema!`,
     siteUrl: `https://localhost:8003/`,
-    image: `/facts1.png`,
+    image: `/ogimage.png`,
     social: {
       twitter: `Rentlio`,
     },
