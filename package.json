@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "Rentlio Hoteli",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Rentlio Hoteli",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "dev@rentl.io",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://rentl.io"
   },
   "dependencies": {
     "@lottiefiles/lottie-interactivity": "^1.3.6",
@@ -19,6 +19,7 @@
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-google-analytics": "^4.5.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-gtag": "^4.11.0",
     "gatsby-plugin-google-tagmanager": "^4.11.1",
     "gatsby-plugin-hotjar": "^1.1.1",
     "gatsby-plugin-image": "^2.5.2",

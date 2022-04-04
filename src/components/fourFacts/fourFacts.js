@@ -57,6 +57,7 @@ const FourFacts = () => {
         textUp="Tratite vrijeme danima čekajući izvještaje pune neusklađenih podataka? "
         textDown="Pristupite pouzdanim podacima i izvješćima u roku jednog klika uz rentlio 3 u 1 rješenje."
         imageBg={p4bg}
+        width="900"
       />
     </FourFactsWrap>
   )
