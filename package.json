@@ -42,6 +42,8 @@
     "lottie-web": "^5.8.1",
     "prismjs": "^1.25.0",
     "react": "^17.0.1",
+    "react-cookie": "^4.1.1",
+    "react-cookie-consent": "^7.4.1",
     "react-dom": "^17.0.1",
     "react-hammerjs": "^1.0.1",
     "react-helmet": "^6.1.0",

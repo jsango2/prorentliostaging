@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/Hero/Hero"
@@ -12,7 +12,11 @@ import Integrations from "../components/Integrations"
 import FormBottom from "../components/FormBottom"
 import BlogCards from "../components/BlogCards"
 import Footer from "../components/Footer"
+import CookieConsent from "react-cookie-consent"
+import useWindowSize from "../components/helper/useWindowSize"
+
 const BlogIndex = ({ data, location }) => {
+  const size = useWindowSize()
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
     <Layout location={location} title={siteTitle}>
@@ -27,6 +31,32 @@ const BlogIndex = ({ data, location }) => {
       <FormBottom />
       <BlogCards />
       <Footer />
+      <CookieConsent
+        location="bottom"
+        buttonText="Slažem se"
+        cookieName="pro.rentl.io"
+        containerClasses="cookieConsent"
+        buttonClasses="cookieButton"
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+      >
+        {size.width > 750 ? (
+          <div>
+            Koristimo kolačiće radi pružanja najboljeg korisničkog iskustva.
+            Pregledavanjem i korištenjem naše internet stranice slažete se s
+            korištenjem kolačića u skladu s našim{" "}
+            <a href="https://rentl.io/izjava-o-kolacicima">
+              Pravilima o korištenju kolačića
+            </a>
+          </div>
+        ) : (
+          <div>
+            <a href="https://rentl.io/izjava-o-kolacicima">
+              Pravila o korištenju kolačića
+            </a>
+          </div>
+        )}
+      </CookieConsent>
     </Layout>
   )
 }

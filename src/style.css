@@ -326,6 +326,48 @@ a:focus {
   position: absolute;
   display: none;
 }
+.cookieConsent {
+  align-items: center !important;
+  /* position: relative; */
+  background: white !important;
+  color: grey !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* left: 0px; */
+  position: fixed;
+  width: 75% !important;
+  max-width: 900px;
+  z-index: 999;
+  bottom: 0px;
+  padding: 2.14rem;
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 20px;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 10px;
+  /* margin: 0px auto 30px; */
+  /* margin: 0 auto; */
+  left: auto !important;
+  right: 50% !important;
+  transform: translate(50%, -44px) !important;
+}
+.cookieButton {
+  display: inline-block;
+  appearance: none;
+  border: 1px solid rgb(234, 234, 234) !important;
+  min-width: 120px;
+  position: relative;
+  color: rgb(47, 47, 47);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin: 0px 2rem;
+  padding: 1rem !important;
+  transition: all 0.2s ease-in-out 0s !important;
+  opacity: 0.7 !important;
+  background-color: rgb(247, 247, 247) !important;
+  cursor: pointer !important;
+}
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
@@ -530,6 +572,16 @@ a:focus {
   transform: translate(0%, 0%);
 }
 .photoEnd {
+}
+@media only screen and (max-width: 750px) {
+  .cookieConsent {
+    align-items: center !important;
+    /* position: relative; */
+    /* height: 200px; */
+    justify-content: center !important;
+    /* left: 0px; */
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
