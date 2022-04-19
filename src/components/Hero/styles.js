@@ -6,6 +6,7 @@ export const HeroWrap = styled.div`
   width: 100%;
   height: 783px;
   background-image: url(${bg});
+  background-color: #0a2741;
   background-position: center;
   background-size: cover;
   padding-left: 130px;
