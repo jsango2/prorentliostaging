@@ -7,6 +7,7 @@ import {
   FormOverlay,
 } from "./styles.js"
 import logo from "../../../static/images/RentlioLogoTamni.svg"
+import splitbee from "@splitbee/web"
 
 const encode = data => {
   return Object.keys(data)
@@ -85,6 +86,7 @@ class Form2 extends React.Component {
       mjesto,
       sustav,
     } = this.state
+    splitbee.track("Signup Form")
 
     return (
       <>
@@ -112,7 +114,10 @@ class Form2 extends React.Component {
               {/* <input type="checkbox" name="recieveNewsletter" /> */}
             </form>
             {/* PRAVI FORM */}
-            <form onSubmit={this.handleSubmit}>
+            <form
+              onSubmit={this.handleSubmit}
+              data-splitbee-event="Signup Form"
+            >
               <input
                 type="text"
                 placeholder="Ime i prezime"
