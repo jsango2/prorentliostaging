@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { FormWrap, FormBehind, FormTitle, FieldsWrap } from "./styles.js"
+import splitbee from "@splitbee/web"
 
 const encode = data => {
   return Object.keys(data)
@@ -18,7 +19,7 @@ const Form = ({ title }) => {
   })
 
   const handleSubmit = e => {}
-
+  splitbee.track("Signup Form")
   return (
     <>
       <FormWrap>
@@ -27,7 +28,7 @@ const Form = ({ title }) => {
         </FormTitle>
 
         <FieldsWrap>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} data-splitbee-event="Signup Form">
             <input
               type="text"
               placeholder="Ime i Prezime"

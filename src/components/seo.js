@@ -82,7 +82,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     >
-      <script async src="https://cdn.splitbee.io/sb.js" />
+      {/* <script async src="https://cdn.splitbee.io/sb.js" /> */}
     </Helmet>
   )
 }
