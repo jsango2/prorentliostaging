@@ -49,14 +49,14 @@ export const HeroTitle = styled.h1`
   position: relative;
   width: 651px;
   height: auto;
-  margin-top: 127px;
+  margin-top: 80px;
   margin-bottom: 28px;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 80px;
   line-height: 94px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 
   @media screen and (max-width: 620px) {
     font-style: normal;
@@ -72,7 +72,7 @@ export const HeroTitle = styled.h1`
 `
 export const HeroSubTitle = styled.h1`
   position: relative;
-  width: 797px;
+  width: 730px;
   height: auto;
   margin-top: 27px;
   margin-bottom: 28px;

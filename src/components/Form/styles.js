@@ -3,11 +3,11 @@ import styled from "styled-components"
 export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
-  height: 700px;
+  height: 560px;
   background: #ffffff;
   /* Gray04 */
   overflow: hidden;
-  top: 70px;
+  top: 170px;
   right: 130px;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
@@ -201,23 +201,19 @@ export const FieldsWrap = styled.div`
 
   & input {
     width: 100%;
-    height: 60px;
+    height: 35px;
     margin-bottom: 15px;
     padding-left: 20px;
-    background: #ffffff;
-    /* Gray04 */
-
-    border: 1px solid #eaeaea;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(234, 234, 234);
     box-sizing: border-box;
     border-radius: 8px;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
-    /* identical to box height, or 187% */
-    /* Gray01 */
-    color: #2f2f2f;
+    color: rgb(47, 47, 47);
   }
   & input:focus {
     border: 1px solid #1d9ed9;
