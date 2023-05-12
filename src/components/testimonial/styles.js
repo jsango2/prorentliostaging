@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const TestimonialWrap = styled.div`
   position: relative;
   width: 100%;
-  height: 483px;
+  height: 520px;
   background: #ffffff;
   padding-top: 100px;
   padding-left: 130px;

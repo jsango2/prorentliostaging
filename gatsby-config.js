@@ -31,14 +31,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        includeInDevelopment: true, // optional parameter to include script in development
-        id: 2862968,
-        sv: 6,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-hotjar`,
+    //   options: {
+    //     includeInDevelopment: true, // optional parameter to include script in development
+    //     id: 2862968,
+    //     sv: 6,
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -70,22 +70,22 @@ module.exports = {
     //     trackingId: `ADD YOUR TRACKING ID HERE`,
     //   },
     // },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: process.env.GOOGLE_TAGMANAGER_ID,
+    // {
+    //   resolve: "gatsby-plugin-google-tagmanager",
+    //   options: {
+    //     id: process.env.GOOGLE_TAGMANAGER_ID,
 
-        // Include GTM in development.
-        //
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
+    //     // Include GTM in development.
+    //     //
+    //     // Defaults to false meaning GTM will only be loaded in production.
+    //     includeInDevelopment: false,
 
-        // Defaults to false
-        enableWebVitalsTracking: true,
-        // // Defaults to https://www.googletagmanager.com
-        // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
-      },
-    },
+    //     // Defaults to false
+    //     enableWebVitalsTracking: true,
+    //     // // Defaults to https://www.googletagmanager.com
+    //     // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+    //   },
+    // },
     // {
     //   resolve: `gatsby-plugin-google-gtag`,
     //   options: {

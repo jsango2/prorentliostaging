@@ -3,11 +3,11 @@ import styled from "styled-components"
 export const FormWrap = styled.div`
   position: absolute;
   width: 480px;
-  height: 668px;
+  height: 700px;
   background: #ffffff;
   /* Gray04 */
   overflow: hidden;
-  top: 510px;
+  top: 70px;
   right: 130px;
   border: 1px solid #eaeaea;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ export const FormBehind = styled.div`
   width: 440px;
   height: 370px;
   right: 155px;
-  bottom: -90px;
+  bottom: 139px;
   z-index: 1;
   /* Gray04 */
 
@@ -178,7 +178,7 @@ export const FormTitle = styled.div`
   font-size: 16px;
   line-height: 30px;
   color: #0d3151;
-
+  text-align: center;
   @media screen and (max-width: 430px) {
     margin-left: 20px;
     margin-right: 10px;

@@ -36,9 +36,9 @@ export const HeroOverlay = styled.div`
     margin-bottom: 1rem; */
   }
 `
-export const LogoHero = styled.div`
+export const LogoHero = styled.a`
   position: relative;
-
+  cursor: pointer;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
@@ -48,7 +48,7 @@ export const LogoHero = styled.div`
 export const HeroTitle = styled.h1`
   position: relative;
   width: 651px;
-  height: 195px;
+  height: auto;
   margin-top: 127px;
   margin-bottom: 28px;
   font-family: "Roboto", sans-serif;
@@ -57,6 +57,31 @@ export const HeroTitle = styled.h1`
   font-size: 80px;
   line-height: 94px;
   color: #ffffff;
+
+  @media screen and (max-width: 620px) {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    /* or 117% */
+    width: 90%;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+`
+export const HeroSubTitle = styled.h1`
+  position: relative;
+  width: 797px;
+  height: auto;
+  margin-top: 27px;
+  margin-bottom: 28px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 63px;
+  line-height: 75px;
+  color: rgb(255, 255, 255);
 
   @media screen and (max-width: 620px) {
     font-style: normal;

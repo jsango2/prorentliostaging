@@ -22,11 +22,11 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="Prijavi se | Otkrij što Rentlio priprema. Otkrij Rentlio Pro." />
       <Hero />
-      <Testimonial />
+      <UserLogos />
+      {/* <Testimonial /> */}
       <FourFacts />
       <TableSection />
       <Clients />
-      <UserLogos />
       <Integrations />
       <FormBottom />
       <BlogCards />

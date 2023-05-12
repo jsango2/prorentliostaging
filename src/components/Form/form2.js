@@ -92,7 +92,7 @@ class Form2 extends React.Component {
       <>
         <FormWrap>
           <FormTitle>
-            Prijavi se i otkrij što Rentlio priprema. Otkrij Rentlio Pro.
+            Dogovorite demo prezentaciju prilagođenu Vašim potrebama
           </FormTitle>
 
           <FieldsWrap>

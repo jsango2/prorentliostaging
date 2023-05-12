@@ -16,9 +16,9 @@ const FourFacts = () => {
         key={1}
         titleUp="Efikasno"
         slide="80% manje administracije"
-        title="Koristite više sustava - umjesto jednog?"
-        textUp="Rezervacija nije vidljiva i izmjene nisu evidentirane? Česti overbooking? Gost je stigao, ali rezervacija nije?"
-        textDown="Rentlio je cjelovito PMS, channel manager i booking engine cloud rješenje koje ne trpi navedene probleme."
+        title="Jedan sustav za sve hotelske operacije"
+        textUp="Uz Rentlio PMS i Channel Manager svi OTA kanali su u potpunosti sinkronizirani. Centralni kalendar omogućuje recepciji efikasnije i jednostavnije upravljanje rezervacijama, ažuriranje cijena i upravljanje dostupnošću i restrikcijama u samo par klikova. "
+        textDown=""
         image={p1}
         imageBg={pbg}
         position="50% 27%"
@@ -29,10 +29,10 @@ const FourFacts = () => {
       <Fact
         key={2}
         titleUp="Pouzdano"
-        slide="3:36 minute za odgovor"
-        title="Odgovor podrške čekate tjednima? "
-        textUp="Zaobilazite probleme jer od slanja upita nema ništa? "
-        textDown="99% razgovora Rentlio korisničke podrške naši su korisnici ocijenili izvanrednim ili odličnim ocjenama, a na upite odgovaramo u roku od samo 3 minute."
+        slide="3 minute za odgovor"
+        title="Lokalna podrška vama na usluzi"
+        textUp="Na vaš upit odgovaramo u samo 3 minute."
+        textDown="99% razgovora Rentlio korisničke podrške korisnici su ocijenili izvanrednim ili odličnim ocjenama. Uz vrhunsku korisničku podršku, naš onboarding tim pomoći će Vam u postavljanju hotela na Rentlio Pro te u edukaciji Vaših timova. "
         imageBg={p2bg}
         image={p2}
         position="50% 0%"
@@ -43,9 +43,9 @@ const FourFacts = () => {
         key={3}
         titleUp="Profitabilno"
         slide="25% viši prihodi"
-        title="Propuštate prihode?"
-        textUp="Vaš hotelski sustav funkcionira kao da su još devedesete, samo zbrajate propuštene šanse za više prihode?"
-        textDown="Samo centralizacijom upita i uz moderni Rentlio Booking Engine, vaši prihodi će porasti za 25%."
+        title="Ostvarite veće prihode"
+        textUp="OTA kanali u prosjeku naplaćuju 15-30% provizije. "
+        textDown="Rentlio Booking Engine-a omogućuju Vam ostvarivanje većeg broja direktnih rezervacija i dodatnih prihoda uz samo 2% provizije. Centralizacijom upita i s više direktnih rezervacija  vaši prihodi mogu porasti i do 25%. "
         imageBg={p3bg}
         position="70% 50%"
       />
@@ -53,9 +53,9 @@ const FourFacts = () => {
         key={4}
         titleUp="Fleksibilno"
         slide="Izvještaji u <30 sekundi"
-        title="Izvještaji kasne satima?"
-        textUp="Tratite vrijeme danima čekajući izvještaje pune neusklađenih podataka? "
-        textDown="Pristupite pouzdanim podacima i izvješćima u roku jednog klika uz rentlio 3 u 1 rješenje."
+        title="Izvještaji na dohvat ruke"
+        textUp="Rentlio vam omogućuje direktan i transparentan uvid u uspješnost poslovanja i mogućnost brzog generiranja tjednih, mjesečnih i godišnjih izvještaja. "
+        textDown="Jednostavan pristup podacima poput prihoda, popunjenosti kapaciteta, broju prodanih noćenja, udjelu rezervacija po zemljama i kanalima prodaje pomoći će vam u donošenju strateških poslovnih odluka."
         imageBg={p4bg}
         position="0% 0%"
         width="900"
