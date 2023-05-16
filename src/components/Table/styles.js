@@ -11,6 +11,12 @@ export const TableSectionWrap = styled.div`
   padding-left: 130px;
   padding-right: 130px;
   padding-bottom: 130px;
+  @media screen and (max-width: 1090px) {
+    width: 100vw;
+
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
 
   @media screen and (max-width: 768px) {
     width: 100vw;

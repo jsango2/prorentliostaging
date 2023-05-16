@@ -15,9 +15,11 @@ import vista from "../../../static/images/vista.png"
 export const UserLogosWrap = styled.div`
   position: relative;
   width: 100%;
-  height: auto;
+  height: 500px;
+
   background: white;
   padding-top: 200px;
+  /* padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 195px;
   padding-right: 195px;
@@ -30,28 +32,32 @@ export const UserLogosWrap = styled.div`
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 80px;
   grid-row-gap: 70px;
-  justify-items: center;
+  justify-items: center; */
   @media screen and (max-width: 900px) {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 80px;
-    grid-row-gap: 50px;
+    grid-row-gap: 50px; */
   }
-  @media screen and (max-width: 600px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 1100px) {
+    width: 100vw;
+    height: 880px;
+    overflow: hidden;
+    padding-top: 610px;
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px; */
   }
   @media screen and (max-width: 400px) {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 50px;
+    grid-row-gap: 50px; */
   }
 `
 export const SanRocco = styled.div`
@@ -63,8 +69,9 @@ export const SanRocco = styled.div`
 
   width: 130px;
   height: 100px;
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    width: 100px;
+    height: 80px;
   }
 `
 export const Martinis = styled.div`
@@ -76,8 +83,9 @@ export const Martinis = styled.div`
 
   width: 130px;
   height: 100px;
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    width: 100px;
+    height: 80px;
   }
 `
 export const Bevanda = styled.div`
@@ -88,8 +96,10 @@ export const Bevanda = styled.div`
   background-repeat: no-repeat;
   width: 130px;
   height: 100px;
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    margin-top: 40px;
+    width: 50px;
+    height: 35px;
   }
 `
 export const Prijeko = styled.div`
@@ -101,8 +111,9 @@ export const Prijeko = styled.div`
   width: 130px;
   height: 100px;
 
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    width: 50px;
+    height: 35px;
   }
 `
 export const Verdi = styled.div`
@@ -114,8 +125,9 @@ export const Verdi = styled.div`
   width: 130px;
   height: 100px;
 
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    width: 100px;
+    height: 80px;
   }
 `
 export const Cittar = styled.div`
@@ -127,8 +139,9 @@ export const Cittar = styled.div`
   width: 130px;
   height: 100px;
 
-  @media screen and (max-width: 400px) {
-    width: 30vw;
+  @media screen and (max-width: 500px) {
+    width: 100px;
+    height: 80px;
   }
 `
 export const Palace = styled.div`
@@ -193,7 +206,8 @@ export const Jarun = styled.div`
   height: 100px;
 
   @media screen and (max-width: 400px) {
-    width: 30vw;
+    width: 100px;
+    height: 80px;
   }
 `
 export const Vista = styled.div`
@@ -206,6 +220,7 @@ export const Vista = styled.div`
   height: 100px;
 
   @media screen and (max-width: 400px) {
-    width: 30vw;
+    width: 100px;
+    height: 80px;
   }
 `

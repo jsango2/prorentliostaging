@@ -12,8 +12,20 @@ export const HeroWrap = styled.div`
   padding-left: 130px;
   padding-top: 96px;
   /* overflow: hidden; */
+  @media screen and (max-width: 1090px) {
+    width: 100vw;
+    padding-left: 30px;
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
   @media screen and (max-width: 700px) {
     padding-left: 30px;
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
+  @media screen and (max-width: 560px) {
+    height: 923px;
+
     /* order: 1;
     margin-bottom: 1rem; */
   }
@@ -86,11 +98,10 @@ export const HeroSubTitle = styled.h1`
   @media screen and (max-width: 620px) {
     font-style: normal;
     font-weight: 900;
-    font-size: 60px;
-    line-height: 70px;
-    /* or 117% */
+    font-size: 50px;
+    line-height: 63px;
     width: 90%;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     margin-top: 50px;
     margin-bottom: 60px;
   }

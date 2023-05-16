@@ -14,6 +14,12 @@ export const WrapIntegrationsSection = styled.div`
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  @media screen and (max-width: 1090px) {
+    width: 100vw;
+
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
   @media screen and (max-width: 430px) {
     width: 100vw;
 

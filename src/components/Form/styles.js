@@ -21,9 +21,9 @@ export const FormWrap = styled.div`
     right: 50%;
     transform: translate(50%, 0);
   }
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 560px) {
     width: 95%;
-    top: 756px;
+    top: 895px;
     right: 50%;
     transform: translate(50%, 0);
   }
@@ -47,7 +47,9 @@ export const FormBehind = styled.div`
     right: 50%;
     transform: translate(50%, 0);
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 560px) {
+    top: 890px;
+
     width: 85%;
   }
 `

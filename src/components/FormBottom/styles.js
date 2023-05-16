@@ -9,6 +9,12 @@ export const WrapFormBottom = styled.div`
 
   display: flex;
   overflow: hidden;
+  @media screen and (max-width: 1090px) {
+    width: 100vw;
+
+    /* order: 1;
+    margin-bottom: 1rem; */
+  }
   @media screen and (max-width: 860px) {
     width: 100vw;
     height: auto;
